@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.textStyle {
+  font-family: "Open Sans", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 0.9px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  .infoContent{
+    display: flex;
+    flex-direction: column;
+    .text{
+      @extend .textStyle;
+      font-size: 16px;
+      color: #000;
+    }
+  }
+  .skillContent{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #f1f1f1;
+    margin-top: 24px;
+    .text{
+      @extend .textStyle;
+      font-size: 16px;
+      color: #000;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+    .content{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+}
+.renderInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 24px;
+  .infoTitle {
+    @extend .textStyle;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  .infoText{
+    @extend .textStyle;
+    font-size: 14px;
+    color: #999;
+  }
+}
