@@ -1,6 +1,6 @@
 Thank you very much for your interest in Unitz. 
 
-As a next step in our interview process, we would like you to complete the following test and submit the results as a Pull Request to this repository.
+As a next step in our interview process, we would like you to complete the following test and submit the results as a Pull Request to this repository. You need to fork this repository and push your code to your own repository in order to make a Pull Request to this repository.
 
 In the repo, there must be instructions on how to run the project locally, and if possible some screenshots of the product attached. 
 
