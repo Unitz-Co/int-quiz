@@ -30,7 +30,6 @@ const useStyle = makeStyles((theme) => ({
 function ListAdvisor() {
   const classes = useStyle();
   const listAdvisor = data.data.advisorProfileCollection.items;
-  console.log(listAdvisor);
   const [loading, setLoading] = useState(true);
   const [listAdvisorSearched, setListAdvisorSearched] = useState([]);
   const [filter, setFilter] = useState({
