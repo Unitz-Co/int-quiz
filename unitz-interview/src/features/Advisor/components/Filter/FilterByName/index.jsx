@@ -20,8 +20,7 @@ function FilterByName({ onChange }) {
       clearTimeout(typingTimeOutRef.current);
     }
     typingTimeOutRef.current = setTimeout(() => {
-      const formValues = { searchName: value };
-      onChange(formValues);
+      onChange(value);
     }, 300);
   };
 

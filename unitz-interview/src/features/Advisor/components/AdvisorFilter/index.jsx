@@ -2,8 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import FilterByName from "../Filter/FilterByName";
+import FilterByCategory from "../Filter/FilterByCategory";
 // import FilterByCategory from "../Filter/FilterByCategory";
 AdvisorFilter.propTypes = {
+  filters: PropTypes.object.isRequired,
   onChange: PropTypes.func,
 };
 
@@ -18,15 +20,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function AdvisorFilter({ onChange }) {
+function AdvisorFilter({ onChange, filters }) {
   const classes = useStyles();
-  const handleChange = (values) => {
-    if (onChange) onChange(values);
+  const handleChangeName = (values) => {
+    if (!onChange) return;
+    const newFilter = {
+      ...filters,
+      searchName: values,
+    };
+    onChange(newFilter);
   };
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <FilterByName onChange={handleChange} />
-      {/* <FilterByCategory /> */}
+      <FilterByName onChange={handleChangeName} />
+      <FilterByCategory />
     </form>
   );
 }

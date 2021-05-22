@@ -35,7 +35,7 @@ function Header() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <AppBar className={classes.header} position="static">
+      <AppBar className={classes.header} position="fixed">
         <Toolbar>
           <CodeIcon className={classes.menuButton} />
           <Typography variant="h6" className={classes.title}>

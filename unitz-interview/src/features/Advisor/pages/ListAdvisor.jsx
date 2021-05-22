@@ -30,6 +30,8 @@ const useStyle = makeStyles((theme) => ({
 function ListAdvisor() {
   const classes = useStyle();
   const listAdvisor = data.data.advisorProfileCollection.items;
+  console.log(listAdvisor);
+  const [loading, setLoading] = useState(true);
   const [listAdvisorSearched, setListAdvisorSearched] = useState([]);
   const [filter, setFilter] = useState({
     searchName: "",
@@ -41,17 +43,18 @@ function ListAdvisor() {
         .toLowerCase()
         .includes(filter.searchName.toLowerCase());
     });
+    if (results) setLoading(false);
     setListAdvisorSearched(results);
   }, [filter.searchName, listAdvisor]);
 
-  const handleChange = (newFilters) => {
+  const handleFilterChange = (newFilters) => {
     setFilter({
       ...filter,
-      searchName: newFilters.searchName,
+      ...newFilters,
     });
   };
   return (
-    <Box>
+    <Box pt={5}>
       <Container>
         <Grid container spacing={1}>
           <Grid item className={classes.filter}>
@@ -65,7 +68,10 @@ function ListAdvisor() {
                   <Typography variant="h5">Filters</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <AdvisorFilter onChange={handleChange} />
+                  <AdvisorFilter
+                    filters={filter}
+                    onChange={handleFilterChange}
+                  />
                 </AccordionDetails>
               </Accordion>
             </Paper>
@@ -74,8 +80,8 @@ function ListAdvisor() {
         <Grid container spacing={1}>
           <Grid item className={classes.data}>
             <Paper elevation={0}>
-              {!listAdvisorSearched ? (
-                <AdvisorSkeleton length={listAdvisorSearched.length} />
+              {loading ? (
+                <AdvisorSkeleton length={10} />
               ) : (
                 <AdvisorList data={listAdvisorSearched} />
               )}
