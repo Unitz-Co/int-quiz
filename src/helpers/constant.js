@@ -1,0 +1,1 @@
+export const HEADER = ['Avatar', 'Name', 'Email', 'Number Phone', 'Categories', 'Services', 'Skill'];

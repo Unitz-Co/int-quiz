@@ -1,0 +1,35 @@
+#root {
+  position: relative;
+}
+.dashboardPage-container {
+  height: 98%;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fdb714;
+  padding: 10px;
+}
+.content-container {
+  padding: 15px;
+}
+
+.logo-mango-mini {
+  width: 40%;
+  height: 40%;
+  margin-left: 10px;
+}
+.mango-mini-item {
+  height: 50%;
+  width: 60% !important;
+  object-fit: cover;
+}
+.three-dot-icon-in-dashboard {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.topBanner {
+  width: 80%;
+}
+
