@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+
+import Search from './components/Search';
+import HorizontalList from './components/HorizontalList';
+import VerticalList from './components/VerticalList';
+
 
 function App() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data } = await (await fetch('./data.json')).json();
+
+      setItems(data.advisorProfileCollection.items);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search />
+      <HorizontalList />
+      <VerticalList />
     </div>
   );
 }
