@@ -1,0 +1,12 @@
+{
+  "name": "listapp",
+  "displayName": "listapp",
+  "expo": {
+    "name": "listapp",
+    "slug": "listapp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

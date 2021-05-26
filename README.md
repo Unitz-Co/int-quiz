@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Thank you very much for your interest in Unitz. 
 
 As a next step in our interview process, we would like you to complete the following test and submit the results as a Pull Request to this repository. You need to fork this repository and push your code to your own repository in order to make a Pull Request to this repository.
@@ -33,3 +34,22 @@ Hoang Pham
 Co-founder Unitz.
 
 
+=======
+# Unitz Test
+
+Bản này được dev trên mac nên hiện tại đang support cho mac.
+
+## Setup Guide.
+
+- Clone cái repo về.
+- Chạy `yarn install`. Bản này auto link rùi không cần chạy `react-native link`.
+
+### For iOS
+
+- Vào thư mục `ios` chạy `pod install`.
+- Chạy `yarn ios` để chạy app.
+
+### For Android
+
+### For Web
+>>>>>>> 14ad70f4d1f2a22ae27ffee9ffb5fe85a2886ce7
