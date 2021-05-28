@@ -1,23 +1,33 @@
-import RESOURCES from '@assets';
-import {scaleHeight, scaleWidth} from '@utils';
-import React, {useState} from 'react';
+import {scaleWidth} from '@utils';
+import React from 'react';
 import {
+  Modal,
   StyleSheet,
+  Text,
   TouchableOpacity,
   View,
-  Text,
-  Image,
-  Modal,
+  PanResponder,
 } from 'react-native';
 
-const ModalFilter = ({isVisible, closeModal, setFilter = () => {}}) => {
+const ModalFilter = ({isVisible, closeModal}) => {
   const handleFilter = value => {
-    // setFilter(value);
     closeModal(value);
   };
+
+  const panResponder = React.useRef(
+    PanResponder.create({
+      onStartShouldSetPanResponder: (evt, gestureState) => true,
+      onPanResponderGrant: (evt, gestureState) => {
+        if (evt.nativeEvent.locationX === evt.nativeEvent.pageX) {
+          closeModal();
+        }
+      },
+    }),
+  ).current;
+
   return (
     <Modal visible={isVisible} transparent>
-      <View style={styles.container}>
+      <View style={styles.container} {...panResponder.panHandlers}>
         <View style={styles.body}>
           <TouchableOpacity style={styles.btn} onPress={() => handleFilter(0)}>
             <View style={[styles.status, {backgroundColor: '#FFF'}]} />
@@ -51,7 +61,7 @@ const styles = StyleSheet.create({
   body: {
     width: scaleWidth(40),
     height: scaleWidth(40),
-    borderRadius: scaleWidth(1),
+    borderRadius: scaleWidth(1.5),
     backgroundColor: '#FFF',
   },
   btn: {

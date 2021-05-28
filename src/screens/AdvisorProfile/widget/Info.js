@@ -20,7 +20,7 @@ const Info = ({info}) => {
   );
 };
 
-const Avatar = ({displayName, avatarUrl}) => {
+const Avatar = ({displayName}) => {
   const color = ['#9933FF', '#FF3333', '#FF6633', '#FFCC00', '#00CCFF'];
 
   const randomColor = () => {

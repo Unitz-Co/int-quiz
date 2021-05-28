@@ -69,6 +69,6 @@ const styles = StyleSheet.create({
   icon: {
     width: scaleWidth(5),
     height: scaleWidth(5),
-    padding: scaleWidth(3)
+    padding: scaleWidth(3),
   },
 });

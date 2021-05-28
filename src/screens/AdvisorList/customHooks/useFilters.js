@@ -10,29 +10,24 @@ const useFilters = () => {
 
   const [advisorList, setAdvisorList] = useState(listData);
 
-  const onChange = async value => {
-    await setValue(value);
+  const onChange = value => {
+    setValue(value);
   };
 
   const clearValue = () => {
     setValue('');
-    setAdvisorList(listData);
   };
 
-  const searchByName = e => {
-    if (e !== '') {
-      const result = listData.filter(item => {
-        const itemData = item.displayName.toLowerCase();
-        const keyData = e.toLowerCase();
-        return itemData.indexOf(keyData) > -1;
-      });
-      setAdvisorList(result);
-    } else {
-      setAdvisorList(listData);
-    }
+  const openModal = () => {
+    setIsVisible(true);
   };
 
-  useEffect(()=> {
+  const closeModal = value => {
+    setIsVisible(false);
+    setIsFilter(value);
+  };
+
+  useEffect(() => {
     switch (isFilter) {
       case 1:
         const isOnline = listData.filter(item => item.isActive === true);
@@ -61,7 +56,7 @@ const useFilters = () => {
         }
 
         break;
-      default:
+      case 0:
         if (value !== '') {
           const result = listData.filter(item => {
             const itemData = item.displayName.toLowerCase();
@@ -72,30 +67,16 @@ const useFilters = () => {
         } else {
           setAdvisorList(listData);
         }
+      default:
         break;
     }
-  },[isFilter, value])
-
-  const setFilter = () => {
-   
-
-  };
-
-  const openModal = () => {
-    setIsVisible(true);
-  };
-
-  const closeModal = async (value) => {
-    await setIsVisible(false);
-    await setIsFilter(value)
-  };
+  }, [isFilter, value]);
 
   return [
     value,
     onChange,
     clearValue,
     advisorList,
-    setFilter,
     isVisible,
     openModal,
     closeModal,

@@ -10,7 +10,6 @@ const index = () => {
     onChange,
     clearValue,
     advisorList,
-    setFilter,
     isVisible,
     openModal,
     closeModal,
@@ -25,11 +24,7 @@ const index = () => {
         openModal={openModal}
       />
       <ItemList advisorList={advisorList} />
-      <ModalFilter
-        setFilter={setFilter}
-        isVisible={isVisible}
-        closeModal={closeModal}
-      />
+      <ModalFilter isVisible={isVisible} closeModal={closeModal} />
     </View>
   );
 };

@@ -1,6 +1,6 @@
-import { scaleHeight, scaleWidth } from '@utils';
+import {scaleHeight, scaleWidth} from '@utils';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     width: scaleWidth(100),
-    paddingVertical: scaleHeight(12),
+    paddingVertical: scaleHeight(2),
     backgroundColor: '#DFE5F6',
   },
   title: {
