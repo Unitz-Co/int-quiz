@@ -33,3 +33,29 @@ Hoang Pham
 Co-founder Unitz.
 
 
+
+* IMAGES
+  1. Online
+  ![alt](https://i.imgur.com/ndmDQcu.png)
+
+  2. Offline
+  ![alt](https://i.imgur.com/Z879lBd.png)
+
+  3. Offline + Search by name
+  ![alt](https://i.imgur.com/5AU4sPv.png)
+
+  4. Search by name
+  ![alt](https://i.imgur.com/rTo8ija.png)
+
+  5. Search by category
+  ![alt](https://i.imgur.com/4mqgtYW.png)
+
+* Node version: 
+  - 15.11.0
+
+* RUN THE PROJECT LOCALLY
+  - npm i
+  - npm run start
+
+* Link online:  
+  https://vutruongsinh-test-interview.herokuapp.com/
