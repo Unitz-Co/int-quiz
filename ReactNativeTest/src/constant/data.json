@@ -3,6 +3,7 @@
     "advisorProfileCollection": {
       "items": [
         {
+          "onlineStatus": true,
           "sys": {
             "id": "66QsJp61HFt3mIcHXg8WjM",
             "publishedAt": "2021-03-22T06:59:16.867Z"
@@ -84,6 +85,7 @@
           }
         },
         {
+          "onlineStatus": false,
           "sys": {
             "id": "1HVruML305WfGiAgJIUosp",
             "publishedAt": "2021-03-22T06:23:18.942Z"
@@ -124,6 +126,7 @@
           }
         },
         {
+          "onlineStatus": true,
           "sys": {
             "id": "1tLOnOtCECH5axnNqFRjQb",
             "publishedAt": "2021-03-22T06:21:39.236Z"
@@ -212,6 +215,7 @@
           }
         },
         {
+          "onlineStatus": true,
           "sys": {
             "id": "1kmOwGBOKUALh1uRladPJE",
             "publishedAt": "2021-03-22T04:04:23.739Z"
@@ -234,6 +238,7 @@
           }
         },
         {
+          "onlineStatus": false,
           "sys": {
             "id": "1vEXsvWOSTQO1nqREN2niU",
             "publishedAt": "2021-03-22T04:01:02.688Z"
@@ -303,6 +308,7 @@
           }
         },
         {
+          "onlineStatus": true,
           "sys": {
             "id": "Ehyyp8M0gGfZbzvXv5gdR",
             "publishedAt": "2021-03-18T01:56:32.145Z"
@@ -359,6 +365,7 @@
           }
         },
         {
+          "onlineStatus": false,
           "sys": {
             "id": "61yTD0ntFe7uaZfEIlM8E8",
             "publishedAt": "2021-03-17T12:09:58.130Z"
@@ -386,6 +393,7 @@
           }
         },
         {
+          "onlineStatus": false,
           "sys": {
             "id": "77WYN6mHnEXm1ZyphkcXsv",
             "publishedAt": "2021-03-17T08:47:28.218Z"
@@ -429,6 +437,7 @@
           }
         },
         {
+          "onlineStatus": false,
           "sys": {
             "id": "2Bj1sK66W1h4uJCAw0KPK6",
             "publishedAt": "2021-03-17T07:38:11.834Z"
@@ -451,6 +460,7 @@
           }
         },
         {
+          "onlineStatus": true,
           "sys": {
             "id": "2EkDkfMqUeerHyotPRRam0",
             "publishedAt": "2021-03-17T06:57:25.558Z"
@@ -473,6 +483,7 @@
           }
         },
         {
+          "onlineStatus": true,
           "sys": {
             "id": "72GLMm2siIC72m0MI5Fzzp",
             "publishedAt": "2021-03-17T06:39:39.452Z"
