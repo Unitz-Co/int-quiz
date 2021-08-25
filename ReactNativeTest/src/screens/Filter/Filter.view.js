@@ -1,9 +1,16 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, Switch, FlatList} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Switch,
+  FlatList,
+  ScrollView,
+} from 'react-native';
 import {styles} from './Filter.styles';
 import {FilterLogic} from './Filter.logic';
 import {Header, Card, TextField, Modal} from '../../components';
-import {IconSVG} from '../../assets/iconSvg';
+import {LANDSCAPE} from 'react-native-orientation-locker';
 
 const _FilterScreen = props => {
   const {
@@ -24,6 +31,7 @@ const _FilterScreen = props => {
     displayCategoryListText,
     onSave,
     onReset,
+    orientation,
   } = FilterLogic(props);
 
   const _renderItemCategory = ({item}) => {
@@ -89,41 +97,49 @@ const _FilterScreen = props => {
       {/* Modal Online Status */}
       <Modal
         isOpen={showModalStatusOnline}
-        style={styles.modalStyleStatus}
+        style={[
+          styles.modalStyleStatus,
+          orientation == LANDSCAPE && {height: '40%'},
+        ]}
         onPressClose={_closeModalStatusOnline}
         onClosed={_closeModalStatusOnline}
         title={'Select Online Status'}>
-        <TouchableOpacity
-          onPress={_switchOnline(undefined)}
-          style={[
-            styles.btnItemOnlineOffline,
-            onlineStatus === undefined && styles.backgroundSelected,
-          ]}>
-          <Text>Online and Offline</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={_switchOnline(true)}
-          style={[
-            styles.btnItemOnlineOffline,
-            onlineStatus === true && styles.backgroundSelected,
-          ]}>
-          <Text>Online</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={_switchOnline(false)}
-          style={[
-            styles.btnItemOnlineOffline,
-            onlineStatus === false && styles.backgroundSelected,
-          ]}>
-          <Text>Offline</Text>
-        </TouchableOpacity>
+        <ScrollView>
+          <TouchableOpacity
+            onPress={_switchOnline(undefined)}
+            style={[
+              styles.btnItemOnlineOffline,
+              onlineStatus === undefined && styles.backgroundSelected,
+            ]}>
+            <Text>Online and Offline</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={_switchOnline(true)}
+            style={[
+              styles.btnItemOnlineOffline,
+              onlineStatus === true && styles.backgroundSelected,
+            ]}>
+            <Text>Online</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={_switchOnline(false)}
+            style={[
+              styles.btnItemOnlineOffline,
+              onlineStatus === false && styles.backgroundSelected,
+            ]}>
+            <Text>Offline</Text>
+          </TouchableOpacity>
+        </ScrollView>
       </Modal>
 
       {/* Modal Category */}
       <Modal
         isOpen={showModalCategory}
         title={'Select category'}
-        style={styles.modalStyleCategory}
+        style={[
+          styles.modalStyleCategory,
+          orientation == LANDSCAPE && {height: '55%'},
+        ]}
         onPressClose={_closeModalCategory}
         onClosed={_closeModalCategory}>
         <FlatList data={dataCategory} renderItem={_renderItemCategory} />

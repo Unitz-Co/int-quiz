@@ -2,8 +2,11 @@ import React from 'react';
 import {Keyboard} from 'react-native';
 import data from '../../constant/data.json';
 import lodash from 'lodash';
+import {ContextApp} from '../../constant/App';
 
 export const FilterLogic = props => {
+  const contextData = React.useContext(ContextApp);
+
   const dataCategory = React.useMemo(() => {
     return lodash
       .chain(data.data.advisorProfileCollection.items)
@@ -107,5 +110,6 @@ export const FilterLogic = props => {
     displayCategoryListText,
     onSave,
     onReset,
+    orientation: contextData.orientation,
   };
 };

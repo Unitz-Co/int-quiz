@@ -1,7 +1,9 @@
 import React from 'react';
 import data from '../../constant/data.json';
+import {ContextApp} from '../../constant/App';
 
 export const HomeLogic = props => {
+  const contextData = React.useContext(ContextApp);
   const [selectedAdvisor, setSelectedAdvisor] = React.useState();
   const [dataAdvisor, setDataAdvisor] = React.useState([]);
   const [filter, setFilter] = React.useState({
@@ -9,9 +11,7 @@ export const HomeLogic = props => {
     category: [],
     onlineStatus: undefined,
   });
-
   const rootDataAdvisor = data.data.advisorProfileCollection.items;
-  //data.data.advisorProfileCollection.items
 
   React.useEffect(() => {
     const filterData = rootDataAdvisor.filter(advisor => {
@@ -38,7 +38,9 @@ export const HomeLogic = props => {
   const _onPressFilter = () =>
     props.navigation.navigate('Filter', {
       filterData: filter,
-      onSaveFilter: value => setFilter(value),
+      onSaveFilter: value => {
+        setFilter(value);
+      },
     });
 
   const _closeModalInfo = () => setSelectedAdvisor(undefined);
@@ -49,5 +51,6 @@ export const HomeLogic = props => {
     setSelectedAdvisor,
     selectedAdvisor,
     _closeModalInfo,
+    orientation: contextData.orientation,
   };
 };

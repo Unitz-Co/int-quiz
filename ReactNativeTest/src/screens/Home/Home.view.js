@@ -5,6 +5,7 @@ import {IconSVG} from '../../assets/iconSvg';
 import {Images} from '../../assets/images';
 import {HomeLogic} from './Home.logic';
 import {styles} from './Home.styles';
+import {LANDSCAPE, PORTRAIT} from 'react-native-orientation-locker';
 
 const _Home = props => {
   const {
@@ -13,6 +14,7 @@ const _Home = props => {
     setSelectedAdvisor,
     _onPressFilter,
     _closeModalInfo,
+    orientation,
   } = HomeLogic(props);
 
   const _renderButtonRight = () => {
@@ -23,7 +25,7 @@ const _Home = props => {
     );
   };
 
-  const _renderItem = ({item}) => {
+  const _renderItemAdvisor = ({item}) => {
     const avatar = item.avatarUrl?.url
       ? {uri: item.avatarUrl.url}
       : Images.defaultAvatar;
@@ -75,9 +77,15 @@ const _Home = props => {
     );
   };
 
+  const _keyExtractor = advisor => advisor.sys.id;
+
   const hasCategory = !!selectedAdvisor?.categoriesCollection?.items?.length;
   const hasSkills = !!selectedAdvisor?.skillsCollection?.items?.length;
   const hasServices = !!selectedAdvisor?.servicesCollection?.items?.length;
+
+  const getModalHeight = () => {
+    return {height: orientation == LANDSCAPE ? '55%' : '28%'};
+  };
 
   return (
     <View style={styles.container}>
@@ -85,11 +93,12 @@ const _Home = props => {
       <FlatList
         contentContainerStyle={styles.flatList}
         data={dataAdvisor}
-        renderItem={_renderItem}
+        renderItem={_renderItemAdvisor}
+        keyExtractor={_keyExtractor}
         ItemSeparatorComponent={renderSeparator}
       />
       <Modal
-        style={[styles.modalInfo]}
+        style={[styles.modalInfo, getModalHeight()]}
         isOpen={!!selectedAdvisor}
         onPressClose={_closeModalInfo}
         onClosed={_closeModalInfo}
@@ -146,7 +155,7 @@ const _Home = props => {
               <View style={styles.groupTextRow}>
                 <Text style={styles.txtTitleGroupText}>Services: </Text>
                 <Text numberOfLines={2} style={styles.txtPhoneModal}>
-                  {!hasSkills
+                  {!hasServices
                     ? 'Unknown'
                     : selectedAdvisor.servicesCollection?.items
                         ?.map(cate => cate.name)

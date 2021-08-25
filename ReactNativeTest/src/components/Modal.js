@@ -8,6 +8,7 @@ const Modal = props => {
     <RNModalBox
       {...props}
       backdropPressToClose={props.backdropPressToClose ?? true}
+      coverScreen
       position={props.position ?? 'bottom'}>
       <View style={styles.containModal}>
         {props.renderHeader ? (
