@@ -1,0 +1,63 @@
+{
+    "categoriesCollection": {
+        "items": [
+            {
+                "sys": {
+                "id": "6dbCsjeKiwyrUurVporPzF"
+                },
+                "displayName": "Tư vấn tâm lý",
+                "avatarUrl": {
+                "title": "catCoverTamly",
+                "url": "https://images.ctfassets.net/49vqjgy9zjzd/jyXdTRt8AFANaqkRwDau9/c1a7bbbaa1169cd88a6cd8a05bd4323b/catCoverTamly.jpg"
+                }
+            },
+            {
+                "sys": {
+                  "id": "1I2qi7nphzc6tMvpGfhcpu"
+                },
+                "displayName": "Xem phong thủy",
+                "avatarUrl": {
+                  "title": "catCoverPhongThuy",
+                  "url": "https://images.ctfassets.net/49vqjgy9zjzd/4oSAaHZmU8DpvkuqiHNNCU/d74a5a0e8b68831a1bd91b1ded1cef02/catCoverPhongThuy.jpg"
+                }
+            },
+            {
+                "sys": {
+                  "id": "sPpVgn9dKfmwW2OxXDI36"
+                },
+                "displayName": "Tư vấn hôn nhân gia đình",
+                "avatarUrl": {
+                  "title": "catCoverTuVanHonNhan",
+                  "url": "https://images.ctfassets.net/49vqjgy9zjzd/171FH1nxeHRr7jxbdYICn8/d0df9bc601344103e6f349899a92fbdc/catCoverTuVanHonNhan.jpg"
+                }
+            },
+            {
+                "sys": {
+                  "id": "3FZbfOUlzD7LCWXAdyV1vu"
+                },
+                "displayName": "Hon nhan va gia dinh",
+                "avatarUrl": null
+            },
+            {
+                "sys": {
+                  "id": "7pqQHEl1tNTr6VtMqcm9nB"
+                },
+                "displayName": "xem chỉ tay",
+                "avatarUrl": {
+                  "title": "catCoverChiTay",
+                  "url": "https://images.ctfassets.net/49vqjgy9zjzd/6cm7lImuODzdiZ2jUDl8c9/fcf5281b533a37f40b0d65f5618958a7/catCoverChiTay.jpg"
+                }
+            },
+            {
+                "sys": {
+                  "id": "5Oio2f7QyWgEE19pkOZxgH"
+                },
+                "displayName": "Xem tướng học",
+                "avatarUrl": {
+                  "title": "catCoverXemTuong",
+                  "url": "https://images.ctfassets.net/49vqjgy9zjzd/XtMR0qZ8E4vE9d1n8ffOo/aa010b13b4e19c8ec1ffda30dec2982c/catCoverXemTuong.jpg"
+                }
+            }
+        ]
+    }
+}
