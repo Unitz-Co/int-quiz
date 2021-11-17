@@ -1,0 +1,23 @@
+form#filter-form {
+  display: flex;
+  align-items: center;
+
+  .ant-form-item {
+    width: 25%;
+    &:last-child {
+      .ant-form-item-label {
+        visibility: hidden;
+      }
+      .ant-form-item-control {
+        align-self: flex-start;
+
+        button + button {
+          margin-left: 10px;
+        }
+      }
+    }
+    & + .ant-form-item {
+      margin-left: 25px;
+    }
+  }
+}
