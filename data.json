@@ -81,7 +81,8 @@
                 "name": "VideoService"
               }
             ]
-          }
+          },
+          "status": 0
         },
         {
           "sys": {
@@ -121,7 +122,8 @@
                 "name": "VideoService"
               }
             ]
-          }
+          },
+          "status": 1
         },
         {
           "sys": {
@@ -209,7 +211,8 @@
                 "name": "ChatService"
               }
             ]
-          }
+          },
+          "status": 1
         },
         {
           "sys": {

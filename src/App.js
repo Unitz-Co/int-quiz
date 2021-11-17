@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getAdvisors, updateAdvisor } from './services/advisor';
-import { List, Typography, Switch, Statistic, message } from 'antd';
+import { Typography, Switch, message } from 'antd';
 import AdvisorFilterForm from './components/AdvisorFilterForm';
 import ListAdvisor from './components/ListAdvisor';
-import logo from './logo.svg';
 import './App.scss';
 
 export const LAYOUT = {
@@ -34,7 +33,7 @@ function App() {
   }
 
   const handleOnChangeLayout = checked => {
-    setLayout(checked && LAYOUT.horizontal || LAYOUT.vertical);
+    setLayout((checked && LAYOUT.horizontal) || LAYOUT.vertical);
   }
 
   const handleOnUpdate = async advisor => {

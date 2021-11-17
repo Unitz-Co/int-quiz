@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { List, Typography, Switch, Statistic, Menu, Dropdown } from 'antd';
+import { List, Statistic, Menu, Dropdown } from 'antd';
 import { MoreOutlined } from '@ant-design/icons';
 import AdvisorUpdateForm from '../AdvisorUpdateForm';
 import { LAYOUT } from '../../App';
@@ -14,12 +13,12 @@ export default function ListAdvisor(props) {
 
     const { items } = categoriesCollection;
     const categories = items.map(category => category.displayName).filter(cat => cat)
-    return (categories && categories.length) && categories.join(", ") || '--';
+    return ((categories && categories.length) && categories.join(", ")) || '--';
   }
 
   return (
     <List
-      grid={{ gutter: 16, column: props.layout === LAYOUT.vertical && 1 || 3 }}
+      grid={{ gutter: 16, column: (props.layout === LAYOUT.vertical && 1) || 3 }}
       itemLayout={props.layout || LAYOUT.horizontal}
       size="large"
       dataSource={props.advisors}
@@ -35,16 +34,16 @@ export default function ListAdvisor(props) {
                 </Menu.Item>
               </Menu>
             } trigger={['click']} >
-              <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+              <span className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                 <MoreOutlined style={{ fontSize: '18px', color: '#08c' }} />
-              </a>
+              </span>
             </Dropdown>
           ]}
         >
           <div className={props.layout || ''}>
             <Statistic title="Name" value={advisor.displayName || '--'} />
             <Statistic title="Categories" value={getCategories(advisor)} />
-            <Statistic title="Status" value={advisor.status && 'Online' || 'Offline'} />
+            <Statistic title="Status" value={(advisor.status && 'Online') || 'Offline'} />
           </div>
         </List.Item>
       )}

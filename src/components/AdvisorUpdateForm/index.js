@@ -5,7 +5,7 @@ export default function AdvisorUpdateForm(props) {
     Modal.confirm({
       title: 'Update status',
       icon: null,
-      content: `Do you want to update ${props.advisor.displayName}'s status to "${props.advisor.status && 'Offline' || 'Online'}"?`,
+      content: `Do you want to update ${props.advisor.displayName}'s status to "${(props.advisor.status && 'Offline') || 'Online'}"?`,
       okText: 'Update',
       cancelText: 'Cancel',
       onOk() {
