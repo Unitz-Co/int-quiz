@@ -15,3 +15,40 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+input[type='radio'] {
+  display: none;
+}
+
+label {
+  padding-left: 35px;
+  position: relative;
+  margin: 0;
+  line-height: 20px;
+}
+
+label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: '';
+  background: #fff;
+  border: 1px solid black;
+}
+
+input[type='radio']:checked ~ label:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+  content: '';
+  background: rgb(87, 87, 255);
+}

@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <section className="flex gap-4 md:flex-row flex-col justify-between items-center my-16">
+    <section className="flex gap-4 md:flex-row flex-col justify-between items-center my-12">
       <h1 className="text-4xl md:text-6xl cursor-pointer">Advisors</h1>
       <p className="text-lg">
         A test made from{' '}
@@ -14,7 +14,13 @@ export default function Header() {
         >
           Tailwindcss
         </a>{' '}
-        by PhinNL
+        by{' '}
+        <a
+          href="mailto:phindeptroai@gmail.com"
+          className="underline hover:text-sky-600"
+        >
+          PhinNL
+        </a>
       </p>
     </section>
   )

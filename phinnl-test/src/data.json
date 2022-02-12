@@ -81,6 +81,9 @@
                 "name": "VideoService"
               }
             ]
+          },
+          "status": {
+            "online": true
           }
         },
         {
@@ -121,6 +124,9 @@
                 "name": "VideoService"
               }
             ]
+          },
+          "status": {
+            "online": true
           }
         },
         {
@@ -209,6 +215,9 @@
                 "name": "ChatService"
               }
             ]
+          },
+          "status": {
+            "online": false
           }
         },
         {
@@ -231,6 +240,9 @@
           },
           "servicesCollection": {
             "items": []
+          },
+          "status": {
+            "online": true
           }
         },
         {
@@ -300,6 +312,9 @@
                 "name": "PhoneService"
               }
             ]
+          },
+          "status": {
+            "online": false
           }
         },
         {
@@ -356,6 +371,9 @@
                 "name": "VideoService"
               }
             ]
+          },
+          "status": {
+            "online": false
           }
         },
         {
@@ -383,6 +401,9 @@
           },
           "servicesCollection": {
             "items": []
+          },
+          "status": {
+            "online": true
           }
         },
         {
@@ -426,6 +447,9 @@
           },
           "servicesCollection": {
             "items": []
+          },
+          "status": {
+            "online": false
           }
         },
         {
@@ -448,6 +472,9 @@
           },
           "servicesCollection": {
             "items": []
+          },
+          "status": {
+            "online": true
           }
         },
         {
@@ -470,6 +497,9 @@
           },
           "servicesCollection": {
             "items": []
+          },
+          "status": {
+            "online": false
           }
         },
         {
@@ -492,6 +522,9 @@
           },
           "servicesCollection": {
             "items": []
+          },
+          "status": {
+            "online": true
           }
         }
       ]

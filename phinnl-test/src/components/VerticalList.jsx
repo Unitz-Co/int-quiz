@@ -3,17 +3,15 @@ import Category from './Category'
 import Profile from './Profile'
 
 function Item({ data }) {
-  console.log(data)
   return (
     <div
-      className="border-solid border-gray-500 cursor-pointer hover:bg-cyan-50 flex flex-col lg:flex-row justify-between gap-4 font-semibold p-4"
+      className="border-solid border-gray-300 rounded-xl border-2 cursor-pointer hover:bg-cyan-50 flex flex-col lg:flex-row justify-between gap-4 font-semibold p-4"
       style={{
-        borderWidth: '1px 0',
         marginTop: '-1px',
       }}
     >
       <div className="flex gap-4 min-w-[17rem] md:min-w-[22rem]">
-        <Avatar url={data.avatarUrl?.url} status />
+        <Avatar url={data.avatarUrl?.url} online={data.status?.online} />
         <Profile
           name={data.displayName}
           phone={data.phone}
@@ -35,8 +33,7 @@ function Item({ data }) {
 
 export default function VerticalList({ data }) {
   return (
-    <section>
-      <h2 className="text-2xl md:text-3xl my-6">Vertical List</h2>
+    <section className="flex gap-3 flex-col">
       {data.map((item, index) => (
         <Item key={index} data={item} />
       ))}
