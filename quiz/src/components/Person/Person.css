@@ -1,0 +1,27 @@
+.person{
+    margin: 1rem auto ;
+    width: 400px;
+    height: 200px;
+    padding: 1rem;
+    background: black; /*should be black*/
+    color: #FEAA00; /*should be orange*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    text-align: center;
+
+}
+.person p{
+    margin: 1rem;
+}
+.middle{
+    margin: 4rem;
+}
+.horizontal{
+    /* display: inline-block;
+    margin-left: 1rem; */
+    float: left;
+    margin: 1rem;
+}
+.vertical{
+    display: block;
+}

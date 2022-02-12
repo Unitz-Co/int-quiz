@@ -1,0 +1,24 @@
+.filter {
+    background-color: black;
+    color: #FEAA00;
+}
+
+.form {
+    padding-top: 10px;
+    margin: auto;
+    width: 300px;
+}
+.form-element label{
+    text-emphasis: none;
+}
+.form-element input{
+    float: right;
+    padding-right: 50px;
+}
+
+.buttons {
+    margin: auto;
+    width: 300px;
+    padding-bottom: 2px;
+}
+

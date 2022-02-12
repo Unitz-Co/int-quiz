@@ -1,0 +1,7 @@
+.button {
+    margin: 1px auto;
+    display: inline-block;
+    width: 33.3%;
+    font-weight: bold;
+    border-radius: 10px;
+}

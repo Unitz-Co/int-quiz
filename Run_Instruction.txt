@@ -1,0 +1,4 @@
+- Type in "npm start" to start the React-Native Project.
+- The Search button allows finding a specific advisor given his/her name and category.
+- The Clear button empties all the input fields.
+- The Switch View button changes the components' order of the page horizontally and vertically. 
