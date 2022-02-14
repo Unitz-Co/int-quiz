@@ -13,11 +13,13 @@ function Search(props) {
                 return
             }
             let categorys = item.categoriesCollection.items
-            categorys.length > 0 && categorys.forEach(category => {
-                if (searchByCategory(category.displayName.toLowerCase())) {
+
+            for(let i = 0; i < categorys.length; i++) {
+                if (searchByCategory(categorys[i].displayName.toLowerCase())) {
                     result = [... result, item]
+                    break
                 }
-            })
+            }
         })
         props.searchHandle(result)
     }
