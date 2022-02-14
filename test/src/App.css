@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none !important;
+}
+
+.online {
+  color: black !important;
+}
+
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.header .search {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.header .search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.header .search i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: black;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.content .filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content .filter p {
+  margin-right: 10px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.content .filter i {
+  padding: 10px;
+  border-radius: 3px;
+  margin-left: 2px;
+}
+
+.content .filter i.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.content .filter i:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* List */
+.list {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+}
+.row {
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.row .item {
+  width: calc((100% - 30px)/3 );
+  margin: 0 5px 40px;
+}
+
+.row .item .img {
+  width: 100%;
+  height: 240px;
+}
+
+.column {
+  flex-flow: column;
+}
+
+.column .item {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.column .item .img {
+  width: 50%;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.item .img {
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item .info div {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.item .info div h6 {
+  font-size: 15px;
+  min-width: 70px;
+}
+
+.item .info div .skill {
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
