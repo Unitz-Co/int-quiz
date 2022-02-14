@@ -9,17 +9,30 @@ function App() {
   let profilesDefault = data.data.advisorProfileCollection.items
   let [control, setControl] = useState('row')
   let [profiles, setProfiles] = useState(profilesDefault)
+  let [online, setOnline] = useState(false)
 
   function changeControl(value) {
     setControl(value)
   }
 
   function searchHandle(result) {
+    setOnline(false)
     setProfiles(result)
   }
   
   function onlineHandle(result) {
-    setProfiles(result)
+    let result = []
+    setOnline(!online)
+    if (!online) {
+      profilesDefault.forEach(item => {
+        if (item.status === 'on') {
+          result = [...result, item]
+        }
+      })
+      setProfiles(result)
+      return
+    }
+    setProfiles(profilesDefault)
   }
 
   return (
@@ -30,6 +43,7 @@ function App() {
       <div className="content">
         <Control 
           control={control} 
+          online={online}
           profilesDefault={profilesDefault}
           changeControl={changeControl} 
           onlineHandle={onlineHandle}
