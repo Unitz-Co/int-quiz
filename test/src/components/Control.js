@@ -4,18 +4,7 @@ function Control(props) {
     let [online, setOnline] = useState(false)
 
     function onlineHandle() {
-        let result = []
-        setOnline(!online)
-        if (!online) {
-            props.profilesDefault.forEach(item => {
-                if (item.status === 'on') {
-                    result = [...result, item]
-                }
-            })
-            props.onlineHandle(result)
-            return
-        }
-        props.onlineHandle(props.profilesDefault)
+        props.onlineHandle()
     }
 
     return (
