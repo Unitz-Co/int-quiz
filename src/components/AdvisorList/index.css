@@ -1,0 +1,51 @@
+.horizontalContainer {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 1em 0 1em 5em;
+}
+
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em 0 1em 5em;
+}
+
+.horizontalCard {
+  width: 15em;
+  height: 20em;
+  margin: 1em;
+  background-color: snow;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.verticalCard {
+  display: flex;
+  width: 90%;
+  max-width: 140;
+  margin: 1em;
+  background-color: snow;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.view {
+  display: flex;
+  justify-content: flex-end;
+  width: 94%;
+  padding-right: 1em;
+}
+
+.searchBox {
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.status {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-style: italic;
+}
