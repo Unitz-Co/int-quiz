@@ -1,0 +1,37 @@
+.header {
+  background-color: #141414;
+  height: 60px;
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+.searchBar input{
+  font-size: 18px;
+  height: 40px;
+  padding: 0 16px;
+}
+
+.searchBar button {
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+}
+
+.searchBar > button > span {
+  font-size: 24px;
+}
+.changeModeBtn {
+  cursor: pointer;
+}
+
+.changeModeBtn .icon {
+  color: #fff;
+  font-size: 30px;
+}
+

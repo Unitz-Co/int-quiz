@@ -1,0 +1,86 @@
+/* VERTICAL MODE */
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemVerticalWrapper {
+  display: flex;
+  margin: 8px 0;
+  cursor: pointer;
+  padding: 16px 8px;
+  border-radius: 8px;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  transition: all 0.2s;
+}
+
+.itemVerticalWrapper:hover {
+  border-color: #7a7676;
+}
+
+.itemVerticalWrapper .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.itemVerticalWrapper .avatar > div {
+  padding-top: 100%;
+  background: top center/ cover no-repeat;
+}
+
+.itemVerticalWrapper .text {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+/* HORIZONTAL MODE */
+
+.horizontal {
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.itemHorizontalWrapper {
+  width: 24%;
+  margin: 8px 0;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.itemHorizontalWrapper > div {
+  padding: 16px;
+  border-radius: 8px;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 256px;
+}
+
+.itemHorizontalWrapper:hover > div {
+  border-color: #7a7676;
+}
+
+.itemHorizontalWrapper .avatar {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.itemHorizontalWrapper .avatar > div {
+  padding-top: 100%;
+  background: top center/ cover no-repeat;
+}
+
+.itemHorizontalWrapper .text {
+  margin: 0 8px;
+  font-size: 18px;
+}
