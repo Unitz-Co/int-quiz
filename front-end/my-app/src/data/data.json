@@ -9,6 +9,7 @@
           },
           "displayName": "Pham Ngoc Hoang ip",
           "email": "pnhoang@gmail.com",
+          "status": "Online",
           "phone": "+1234567123",
           "avatarUrl": {
             "title": "Hoang Pham Profile Image",
@@ -89,6 +90,7 @@
             "publishedAt": "2021-03-22T06:23:18.942Z"
           },
           "displayName": "HungT GG",
+          "status": "Offline",
           "email": "hungtran0203@gmail.com",
           "phone": "+1234234",
           "avatarUrl": {
@@ -130,6 +132,7 @@
           },
           "displayName": "Hoang Pham iPhone11",
           "email": "hoangpn@gmail.com",
+          "status": "Offline",
           "phone": "+84335182503",
           "avatarUrl": {
             "title": "Hoang Pham Profile Image",
@@ -218,6 +221,7 @@
           },
           "displayName": "Si Truong",
           "email": "si.truongtan@gmail.com",
+          "status": "Offline",
           "phone": "+12341234",
           "avatarUrl": {
             "title": "catCoverChiTay",
@@ -239,6 +243,7 @@
             "publishedAt": "2021-03-22T04:01:02.688Z"
           },
           "displayName": "Hung Tran FB",
+          "status": "Offline",
           "email": "thhung1983@yahoo.com",
           "phone": "+84903865430",
           "avatarUrl": {
@@ -311,6 +316,7 @@
           "email": "hungtran0203_3@gmail.com",
           "phone": "+ 15555550003",
           "avatarUrl": null,
+          "status": "Offline",
           "categoriesCollection": {
             "items": [
               {
@@ -365,6 +371,7 @@
           },
           "displayName": "Danny Doughx",
           "email": null,
+          "status": "Online",
           "phone": null,
           "avatarUrl": null,
           "categoriesCollection": {
@@ -392,6 +399,7 @@
           },
           "displayName": "pba ax43",
           "email": null,
+          "status": "Online",
           "phone": null,
           "avatarUrl": {
             "title": "catCoverTamly",
@@ -436,6 +444,7 @@
           "displayName": "Advisor x24",
           "email": null,
           "phone": null,
+          "status": "Online",
           "avatarUrl": {
             "title": "catCoverTuVanHonNhan",
             "url": "https://images.ctfassets.net/49vqjgy9zjzd/171FH1nxeHRr7jxbdYICn8/d0df9bc601344103e6f349899a92fbdc/catCoverTuVanHonNhan.jpg"
@@ -457,6 +466,7 @@
           },
           "displayName": "anot Dr.Fiax",
           "email": null,
+          "status": "Online",
           "phone": null,
           "avatarUrl": {
             "title": "avatar",
@@ -479,6 +489,7 @@
           },
           "displayName": "New added adv",
           "email": null,
+          "status": "Online",
           "phone": null,
           "avatarUrl": {
             "title": "catCoverTuVanTinhYeu",
