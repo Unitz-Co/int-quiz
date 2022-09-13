@@ -1,0 +1,18 @@
+.advisorlist-wrapper {
+
+    &.hor {
+        display: flex;
+        gap: 2rem;
+        overflow: auto;
+        width: calc(95vw - 177px);
+    }
+
+    &.ver {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 70vh;
+    }
+}

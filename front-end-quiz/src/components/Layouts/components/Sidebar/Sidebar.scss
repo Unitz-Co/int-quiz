@@ -1,0 +1,51 @@
+.sidebar-wrapper {
+    background-color: var(--primary);
+    height: 100vh;
+    width: 177px;
+    min-width: 177px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+    position: relative;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .logo-name {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--white)
+        }
+    }
+
+    .advisors {
+        height: 40px;
+        width: 150px;
+
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding-left: 10px;
+        color: var(--white);
+        background-color: var(--secondary);
+        // margin-top: 50px;
+
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position: absolute;
+        left: 0;
+        top: 180px;
+
+        .advisors-logo {
+            font-size: 2.5rem;
+        }
+
+        .advisors-name {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+}
