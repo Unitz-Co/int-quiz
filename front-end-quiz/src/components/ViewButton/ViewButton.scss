@@ -1,0 +1,33 @@
+.viewbutton-wrapper {
+    color: var(--white);
+    display: flex;
+    gap: 2rem;
+    --font-size-btn: 1.6rem;
+
+    .vertical-btn {
+        height: 40px;
+        border-radius: 15px;
+        background-color: var(--gray);
+        font-size: var(--font-size-btn);
+        font-weight: 600;
+        line-height: 40px;
+        padding: 0 23px;
+        cursor: pointer;
+    }
+
+    .horizontal-btn {
+        height: 40px;
+        border-radius: 15px;
+        background-color: var(--gray);
+        font-size: var(--font-size-btn);
+        font-weight: 600;
+        line-height: 40px;
+        padding: 0 23px;
+        cursor: pointer;
+    }
+
+    .selected{
+        background-color: var(--primary);
+        pointer-events: none;
+    }
+}
