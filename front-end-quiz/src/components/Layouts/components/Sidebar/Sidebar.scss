@@ -9,6 +9,11 @@
     padding-top: 28px;
     position: relative;
 
+    small{
+        position: absolute;
+        bottom: 5px;
+    }
+
     .logo {
         display: flex;
         align-items: center;

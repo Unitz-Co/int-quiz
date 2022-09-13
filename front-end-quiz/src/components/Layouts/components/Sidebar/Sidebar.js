@@ -12,6 +12,7 @@ function Sidebar() {
             <MdSupervisedUserCircle className="advisors-logo" />
             <div className="advisors-name">Advisors</div>
         </div>
+        <small>Coded by Nam Huỳnh<br/>hqnam.it@gmail.com</small>
     </div>);
 }
 
