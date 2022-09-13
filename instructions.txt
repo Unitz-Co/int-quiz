@@ -1,5 +1,8 @@
 
-1. install packages: open git-bash then run:
+0. get source code
+	having git installed
+	having nodejs installed
+1. install packages: open git-bash in project folder "int-quiz", then run:
 	npm install react-scripts
 2. run project:
 	npm start
