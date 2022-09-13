@@ -7,7 +7,7 @@ You can see my Figma template [here](https://www.figma.com/file/hQYpO7BVyZzaz6eP
 
 ## Connect Front-end With Back-end
 
-You can get data from Back-end instead of from Json file.\
+You can get data from Back-end instead of from JSON file.\
 Just start Back-end then start Front-end.\
 *Note: If Back-end not work, Front-end will auto get data from JSON file.
 
