@@ -27,12 +27,12 @@ function AdvisorCard({
                     <div className="info-name">
                         {name}
                     </div>
-                    <div className="info-phone">
+                    <a href={`tel: ${phone}`} className="info-phone">
                         {phone}
-                    </div>
-                    <div className="info-email">
+                    </a>
+                    <a href={`mailto: ${email}`} className="info-email">
                         {email}
-                    </div>
+                    </a>
                 </div>
             </div>
 

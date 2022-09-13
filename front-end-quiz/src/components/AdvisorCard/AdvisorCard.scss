@@ -48,6 +48,12 @@
         .info-name {
             font-weight: 600;
         }
+
+        a {
+            text-decoration: none;
+            display: block;
+            color: var(--primary);
+        }
     }
 
     .category {
@@ -121,8 +127,15 @@
         font-weight: 400;
         padding-top: 10px;
 
+
         .info-name {
             font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            display: block;
         }
     }
 
