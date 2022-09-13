@@ -1,0 +1,6 @@
+
+1. install packages: open git-bash then run:
+	npm install react-scripts
+2. run project:
+	npm start
+3. Open http://localhost:3000 to view it in your browser (if neccessary)
