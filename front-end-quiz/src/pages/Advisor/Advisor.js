@@ -40,7 +40,9 @@ function Advisor() {
                 <Search changeSearchInput={changeSearchInput} />
             </div>
             <StatusButton changeStatus={changeStatus} status={status} />
-            <AdvisorList listAdvisor={advisorList} view={view} status={status} searchInput={searchInput} />
+            <div className="advisorlist">
+                <AdvisorList listAdvisor={advisorList} view={view} status={status} searchInput={searchInput} />
+            </div>
             {/* <AdvisorCard/> */}
         </DefaultLayout>
     </div>);

@@ -1,11 +1,16 @@
 .statusbutton-wrapper {
     font-weight: 500;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    // gap: 2rem;
     // line-height: 100%;
+    float: right;
+
+    span{
+        margin-left: 20px;
+    }
+
     input{
         margin-right: 5px;
         cursor: pointer;
