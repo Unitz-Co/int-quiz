@@ -11,7 +11,7 @@ function AdvisorCard({
     view = "hor" }) {
     if (avt === null) {
         avt = {};
-        avt.url = "https://static.wikia.nocookie.net/otonari-no-tenshisama-tieng-viet/images/b/b4/No_image_available.jpg/revision/latest?cb=20220110095313&path-prefix=vi";
+        avt.url = "./images/no-image.png";
         avt.title = "noImage"
     }
 

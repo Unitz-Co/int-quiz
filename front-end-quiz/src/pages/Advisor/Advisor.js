@@ -7,12 +7,30 @@ import data from "../../data/data.json";
 import AdvisorList from "../../components/AdvisorList/AdvisorList";
 import Search from "../../components/Search/Search";
 import "./Advisor.scss"
+import axios from "axios";
 
 function Advisor() {
+
     const [advisorList, setAdvisorList] = useState([]);
     const [view, setView] = useState("hor");
     const [status, setStatus] = useState("all");
     const [searchInput, setSearchInput] = useState("");
+
+    const fetchAdvisors = async () => {
+        try {
+            const res = await axios.get(`${process.env.REACT_APP_BACK_END_URL}/server/getAdvisors`);
+            setAdvisorList(res.data);
+        }
+        catch (err) {
+            setAdvisorList(data.data.advisorProfileCollection.items);
+            console.error(err.message);
+        }
+
+    }
+    //fetch data from BE
+    useEffect(() => {
+        fetchAdvisors();
+    }, [])
 
 
     function changeView(view) {
@@ -27,11 +45,6 @@ function Advisor() {
         setSearchInput(searchInput);
     }
 
-    // console.log("dashboard ", searchInput);
-    //fetch data
-    useEffect(() => {
-        setAdvisorList(data.data.advisorProfileCollection.items)
-    }, [])
 
     return (<div className="advisor-wrapper">
         <DefaultLayout>
