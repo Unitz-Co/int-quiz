@@ -1,0 +1,25 @@
+.members{
+  width: 70%;
+  margin: 0 auto;
+  .title{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 991.98px){
+  .members{
+    width: 100%;
+  }
+}
+
+@media(max-width: 767.98px){
+.members{
+  width: 100%;
+  .title{
+    margin: 30px 0;
+    font-size: 28px;
+  }
+}
+}

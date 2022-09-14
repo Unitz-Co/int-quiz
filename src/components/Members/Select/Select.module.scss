@@ -1,0 +1,25 @@
+.select{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-right: 35px ;
+  margin-top: 10px;
+  select{
+    width: 10%;
+    height: 40px;
+    outline: none;
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding-left: 7px;
+    &:hover{
+      box-shadow: 0 0 3px orange;
+    }
+  }
+}
+@media(max-width: 767.98px){
+  .select{
+    select{
+      width: 30%;
+    }
+  }
+}
