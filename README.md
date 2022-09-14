@@ -43,12 +43,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 This is my assignment to apply for Frontend position.
 
-###Technologies
+### Technologies
 ReactJS
 Ant design
 lodash
 
-###Overview
+### Overview
 
 By default, it will show items in the form of grid (horizontal)
 
@@ -72,4 +72,4 @@ Filter by status
 ![ScreenShot](https://i.postimg.cc/TwHJqFrW/Screen-Shot-2022-09-14-at-11-55-56.png)
 
 
-###Thank for watching!!
+### Thank for watching!!
