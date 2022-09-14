@@ -1,0 +1,10 @@
+.category__item__img{
+    height: 100px;
+    width: 100px;
+}
+.category__item{
+    margin-top: 10px;
+}
+.category__item__name{
+    margin-bottom: 20px;
+}

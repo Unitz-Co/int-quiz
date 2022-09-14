@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  height: 50px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: aquamarine;
+}
+.list__item__vertical {
+  height: auto;
+  width: 100vh;
+  display: grid;
+  justify-items: center;
+}
+.list__item__vertical .item {
+  display: flex;
+  width: 1400px;
+  height: 400px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.list__item__horizontal {
+  display: flex;
+  overflow: scroll;
+}
+
+.list__item__horizontal .item {
+  margin: 50px 20px;
+  display: grid;
+  width: 500px;
+  height: 1400px;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  position: relative;
+}
+.list__item__horizontal .item__img{
+  height: 300px; 
+  width: 400px;
+}
+.list__item__vertical .item__img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.list__item__horizontal .item__img img {
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+  margin: 20px 25px;
+  overflow: scroll;
+}
+.list__item__vertical .item__content {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.list__item__horizontal .item__content {
+  width: 300px;
+  height: 400px;
+  margin-left: 50px;
+  position: absolute;
+  bottom: 40%;
+}
+.list__item__horizontal .item__content .item__content__information {
+  height: 200px;
+}
+.list__item__horizontal .item__content__category {
+  margin-bottom: 120px;
+}
+.list__item__horizontal .item__content__skill {
+  margin-bottom: -90px;
+}
+.item__content__information,
+.item__content__category,
+.item__content__skill {
+  height: 300px;
+  width: 200px;
+}
+.item__information__name {
+  margin-top: 10px;
+}
+
+.feature{
+  display: flex;
+  position: relative;
+}
+.feature__search{
+  position: absolute;
+  right: 0;
+}
+.feature__search input{
+  height: 30px;
+  width: 300px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+.noData{
+  width: 1000px;
+  padding: 100px;
+}
+.change__view{
+  margin-left: 20px;
+}
+.btn__search{
+  margin-right: 21px;
+}
+.item__status{
+  display: flex;
+  margin-top: 5px;
+}
+.item__status__title{
+  margin-right: 15px;
+}
+.feature__status{
+  position: absolute;
+  right: 18%;
+  top: 90%;
+}
+.feature__status input{
+  margin-left: 20px;
+}
