@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import myJson from "./data.json";
 import Table from "../table/Table";
 
@@ -6,7 +6,6 @@ const Data = () => {
   const data = myJson.data.advisorProfileCollection.items;
   const [view, setView] = useState(true);
   const [value, setValue] = useState("");
-  const [category, setCategory] = useState();
   const [dataSource, setDataSource] = useState(data);
   const [tableFilter, setTableFilter] = useState([]);
 
@@ -26,21 +25,6 @@ const Data = () => {
       setDataSource([...dataSource]);
     }
   };
-
-  const fetchCategory = () => {
-    return data.map((item) =>
-      item.categoriesCollection.items.map((itemCategory) => itemCategory)
-    );
-  };
-  useEffect(() => {
-    setCategory(fetchCategory());
-    // const element = [].concat(...fetchCategory());
-    // setCategory(element);
-  }, [data]);
-
-  console.log(category);
-  console.log(dataSource);
-
   return (
     <div>
       <div className="flex justify-around items-center my-10">
@@ -249,17 +233,17 @@ const Data = () => {
               {value.length > 0
                 ? tableFilter.map((item, index) => (
                     <td key={index}>
-                      {item.servicesCollection.items &&
-                        item.servicesCollection.items.map((item, index) => (
-                          <p key={index}>{item.displayName}</p>
+                      {item.servicesCollection?.items &&
+                        item.servicesCollection?.items.map((item, index) => (
+                          <p key={index}>{item.name}</p>
                         ))}
                     </td>
                   ))
                 : dataSource.map((item, index) => (
                     <td key={index}>
-                      {item.servicesCollection.items &&
-                        item.servicesCollection.items.map((item, index) => (
-                          <p key={index}>{item.displayName}</p>
+                      {item.servicesCollection?.items &&
+                        item.servicesCollection?.items.map((item, index) => (
+                          <p key={index}>{item.name}</p>
                         ))}
                     </td>
                   ))}
