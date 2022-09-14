@@ -6,6 +6,9 @@ This project was forked from https://github.com/Unitz-Co/int-quiz
 
 In the project directory, you can run:
 
+### `yarn install`
+Install modules and create `node_modules` automatically
+
 ### `yarn start`
 
 Runs the app in the development mode.\
