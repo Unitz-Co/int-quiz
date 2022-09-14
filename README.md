@@ -51,6 +51,7 @@ lodash
 ###Overview
 
 By default, it will show items in the form of grid (horizontal)
+![ScreenShot](https://i.postimg.cc/kgB9Tb36/screencapture-localhost-3000-2022-09-14-11-50-43.png)
 [<img alt="grid_list" width="40px" src="https://i.postimg.cc/kgB9Tb36/screencapture-localhost-3000-2022-09-14-11-50-43.png" />]
 
 Change to show in the form of stack(vertical) by clicking the button at the end of the filter line
