@@ -14,5 +14,10 @@ Project sẽ được khởi chạy ở địa chỉ `localhost:3000`
 
 Cảm ơn đã xem qua project của mình.
 
+---
+### Contact
+Phan Thị Thanh Nguyên  
+**Email**: phan.nguyen79@yahoo.com.vn  
+**Mobile Phone**: +84 768 658 205
 
 
