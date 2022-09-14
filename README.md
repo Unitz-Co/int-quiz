@@ -51,16 +51,22 @@ lodash
 ###Overview
 
 By default, it will show items in the form of grid (horizontal)
+
 ![ScreenShot](https://i.postimg.cc/kgB9Tb36/screencapture-localhost-3000-2022-09-14-11-50-43.png)
-[<img alt="grid_list" width="40px" src="https://i.postimg.cc/kgB9Tb36/screencapture-localhost-3000-2022-09-14-11-50-43.png" />]
+
 
 Change to show in the form of stack(vertical) by clicking the button at the end of the filter line
-[<img alt="stack_list" width="40px" src="https://i.postimg.cc/rqnw58XR/screencapture-localhost-3000-2022-09-14-11-56-23.png" />]
+
+![ScreenShot](https://i.postimg.cc/rqnw58XR/screencapture-localhost-3000-2022-09-14-11-56-23.png)
+
 
 Search a keyword by name, or category
-[<img alt="search_name" width="40px" src="https://i.postimg.cc/Sx343xkZ/screencapture-localhost-3000-2022-09-14-11-54-49.png" />]
+
+![ScreenShot](https://i.postimg.cc/Sx343xkZ/screencapture-localhost-3000-2022-09-14-11-54-49.png)
+
 
 Filter by status
-[<img alt="filter_offline" width="40px" src="https://i.postimg.cc/hvzbCsrZ/Screen-Shot-2022-09-14-at-11-56-05.png" />]
 
-[<img alt="alt_text" width="40px" src="https://i.postimg.cc/TwHJqFrW/Screen-Shot-2022-09-14-at-11-55-56.png" />]
+![ScreenShot](https://i.postimg.cc/hvzbCsrZ/Screen-Shot-2022-09-14-at-11-56-05.png)
+
+![ScreenShot](https://i.postimg.cc/TwHJqFrW/Screen-Shot-2022-09-14-at-11-55-56.png)
