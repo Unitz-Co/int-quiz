@@ -1,0 +1,37 @@
+.item-width-100{
+    width: 100%;
+    margin: 0;
+}
+
+.col-md-4 .container{
+    padding: 15px;
+}
+
+.width-img-102{
+    width: 102px !important;
+}
+
+.sms-icon{
+    font-size: 1.01rem;
+}
+
+.none-wrap-paragrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mr-0-2{
+    margin-left: 0.2rem!important;
+}
+
+.online{
+    color: green;
+    font-size: 1.2rem;
+}
+
+.offline{
+    color: red;
+    font-size: 1.2rem;
+}
+
