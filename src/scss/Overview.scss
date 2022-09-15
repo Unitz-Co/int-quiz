@@ -1,0 +1,19 @@
+.information-overview {
+  @apply relative before:content-[''] before:w-[32px] before:h-[1px] before:absolute before:top-2.5 before:-left-[2.55rem] before:bg-slate-200;
+}
+
+.switch-right {
+  @apply before:content-[''] before:w-[22px] before:h-[22px] before:transition before:shadow-lg before:absolute before:rounded-full before:top-0 before:bottom-0;
+}
+
+.addcontent {
+  visibility: hidden;
+  transition: all 500ms;
+
+  opacity: 0;
+}
+
+.contentactice {
+  visibility: inherit;
+  opacity: 1;
+}
