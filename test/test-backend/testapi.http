@@ -1,0 +1,74 @@
+POST http://localhost:8080/api/service
+Content-type: application/json
+
+{
+    "name":"VideoService"
+}
+
+###
+
+POST http://localhost:8080/api/skill
+Content-type: application/json
+
+{
+   "displayName":"Ghi nhớ"
+}
+
+###
+
+POST http://localhost:8080/api/categorie
+Content-type: application/json
+
+{
+   "displayName":"Ghi nhớ"
+}
+
+###
+
+POST http://localhost:8080/api/advisor
+Content-type: application/json
+
+{
+         "displayName": "Mbappe",
+         "email": "mbappe@gmail.com", 
+         "phone": "+123456789", 
+         "avatarUrl": { "title": "mbappe profile", 
+                        "url": "https://icdn.dantri.com.vn/thumb_w/770/2022/04/04/khongthetinduocvoithanhtichcuakylianmbappe-1649050615910.jpg" 
+         },
+          "status":"online",
+          "categoriesCollection": [
+              {
+                  "categorieId":"6322becf7780732bdd1cd95d",
+                  "cateName":"Tư vấn bán nhà"
+              }
+          ],
+          "skillsCollection": [
+              {
+                  "skillId":"6322bfbf7780732bdd1cd96d",
+                  "skillName":"Lắng nghe"
+              },
+              {
+                  "skillId":"6322bfcf7780732bdd1cd96f",
+                  "skillName":"Tâm lý học"
+              },
+              {
+                  "skillId": "6322bfdb7780732bdd1cd971",
+                  "skillName":"Tư vấn"
+              }
+          ],
+          "servicesCollection":[
+              {
+                  "serviceId":"6322c1237780732bdd1cd977",
+                  "serviceName":"ChatService"
+              },
+              {
+                   "serviceId":"6322c12d7780732bdd1cd979",
+                   "serviceName":"PhoneService"
+              },
+              {
+                  "serviceId":"6322c1367780732bdd1cd97b",
+                  "serviceName":"VideoService"
+              }
+          ]
+              
+}
