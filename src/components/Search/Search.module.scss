@@ -1,0 +1,49 @@
+.Search {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #E54B83;
+    position: relative;
+    transition: 0.5s;
+    background: #fff;
+    border-radius: 60px;
+    box-shadow: 0 0 0 4px #E54B83;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    right: 15px;
+    bottom: 0;
+    border: none;
+
+    input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+    }
+
+}
+
+.active {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}

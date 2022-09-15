@@ -1,0 +1,88 @@
+.Card {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 280px;
+    max-width: 300px;
+    border-radius: 28px;
+    color: rgb(75, 72, 72);
+    background: rgba(255, 255, 240, 0.8);
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+        transform: translate(10px);
+    }
+
+    .avatar_top {
+        margin: auto;
+        height: 120px;
+        max-width: 120px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .info_body {
+        height: 100px;
+        overflow: auto;
+        display: flex;
+        margin: 10px 0px;
+        user-select: none;
+        text-align: center;
+        line-height: 1.5rem;
+        flex-direction: column;
+    }
+
+    .categories_body {
+
+        .container_categories {
+            display: grid;
+            overflow: auto;
+            margin: 15px 0px;
+            height: 100px;
+            max-height: 156px;
+            align-items: baseline;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .categories {
+                display: flex;
+                font-size: 14px;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+                &_avatar {
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: 5px;
+                    border-radius: 50%;
+                    background-size: cover;
+                }
+
+                &_title {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin: 15px 0px;
+        height: 100px;
+
+        &_list {
+            padding: 0px 18px;
+            line-height: 1.5rem;
+        }
+    }
+
+}
