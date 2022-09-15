@@ -46,7 +46,7 @@ const AdvisorItem = ({
       });
     }
     return advisorDataUpdate;
-  }, [fieldNameSearch, status]);
+  }, [advisorData, fieldNameSearch, status]);
 
   return (
     <Grid container spacing={2} p={2}>
