@@ -1,0 +1,62 @@
+p {
+  margin: 0px;
+}
+.side-bar {
+  .dasboard-droplist {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+}
+.datadropdown {
+  visibility: hidden;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+}
+
+.datadisplay {
+  visibility: visible;
+}
+
+.recharts-wrapper {
+  @apply w-full;
+  .recharts-surface {
+    @apply absolute -left-9 top-5;
+  }
+}
+
+.recharts-wrapper .recharts-surface {
+  left: 0;
+  right: 0.75rem;
+  top: 0.25rem;
+}
+
+.switch-light {
+  @apply before:content-[''] before:w-[22px] before:h-[22px] before:transition before:shadow-lg before:absolute before:rounded-full before:top-0 before:bottom-0;
+}
+
+.dark-mode {
+  @apply w-[38px] h-6 bg-colorprimary  cursor-pointer rounded-full p-[1px] relative outline-1 outline outline-transparent outline-offset-1 border border-colorprimary;
+}
+
+.dark-mode {
+  @apply before:content-[''] before:ml-[13px] before:opacity-100 before:bg-white before:w-[22px] before:h-[22px] before:transition before:shadow-lg before:absolute before:rounded-full before:top-0 before:bottom-0;
+}
+
+.dark {
+  @apply bg-darkmode text-white;
+}
+
+.tag-sale {
+  @apply bg-white p-5 rounded-lg shadow-sm;
+}
+
+.dark {
+  .darkmode {
+    @apply rounded-lg bg-slate-700;
+  }
+  .sidebar-darkmode {
+    @apply bg-slate-700;
+  }
+}
