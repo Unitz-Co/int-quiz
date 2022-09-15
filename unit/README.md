@@ -28,10 +28,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Preview
 ### 1 Advisor List Screen
-<img src="./public/img/Screenshot_1.png" width="250" alt="Advisor list" />
+![Screenshot](Screenshot_1.png)
 
 ### 2 Filter by status
-<img src="./public/img/Screenshot_2.png" width="250" alt="Advisor list" />
+![Screenshot](Screenshot_2.png)
 
 ### 2 Filter by name or categories
 <img src="./public/img/Screenshot_3.png" width="250" alt="Advisor list" />
+![Screenshot](Screenshot_3.png)
