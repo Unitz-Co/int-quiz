@@ -1,0 +1,102 @@
+.App {
+  width: 95%;
+  margin: 0 auto;
+
+
+
+  .search-container {
+    width: 50%;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    margin: 40px auto 0;
+
+    .search-center {
+      width: 100%;
+      outline: none;
+      font-size: 14px;
+      line-height: 30px;
+      border-radius: 24px;
+      padding: 0 43px;
+      border: 1.5px solid #cdcdcd;
+      height: 40px;
+    }
+
+    .icon-glass {
+      position: absolute;
+      right: 15px;
+      top: 4px;
+
+      svg {
+        font-size: 22px;
+        font-weight: 200;
+        opacity: 0.8;
+        cursor: pointer;
+        transform: rotate(-10deg);
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .search-container {
+      width: 85%;
+    }
+  }
+
+  .select-status {
+
+    outline: none;
+    font-size: 16px;
+    padding: 2px 20px;
+    cursor: pointer;
+  }
+
+  .advisors-container {
+    margin: 24px 0;
+
+    div {
+      margin: 6px 0;
+      font-size: 16px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .avatar {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .status {
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+
+      .display-online {
+        margin-right: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #2bdd25;
+      }
+
+      .display-offline {
+        margin-right: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ccc;
+      }
+    }
+  }
+}
