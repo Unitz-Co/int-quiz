@@ -21,7 +21,7 @@ import {
   Colors,
 
 } from 'react-native/Libraries/NewAppScreen';
-import * as initData from './int-quiz/data.json';
+import * as initData from './intquiz/data.json';
 import CheckBox from '@react-native-community/checkbox';
 
 const App = () => {
