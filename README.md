@@ -12,6 +12,7 @@
 - And if Window 
 + npm start
 
-==================
-Demo
-<img src="https://i.ibb.co/zJjxPVs/unitz-co-demo.gif" alt="unitz-co-demo" border="0" height:"200", width:"150"/>
+
+DEMO PRODUCTTION
+![Watch the video](https://github.com/trungquan2k/int-quiz/blob/main/unitz-co-demo.gif)
+<img src="https://github.com/trungquan2k/int-quiz/unitz-co-demo.gif" width="128" height="160"/>
