@@ -9,8 +9,8 @@ const List = () => {
     {
       title: "displayName",
       dataIndex: "displayName",
-      sorter: (a, b) => a.name?.length - b.name?.length,
-      sortDirections: ["descend"],
+      // sorter: (a, b) => a.name?.length - b.name?.length,
+      // sortDirections: ["descend"],
       key: "displayName",
     },
     {
@@ -161,11 +161,16 @@ const List = () => {
             resultByName = resultByName.filter(
               (n) => !n.sys.id.includes(item.sys.id)
             );
+
+            resultByCategory = resultByCategory.filter(
+              (n) => !n.sys.id.includes(item.sys.id)
+            );
             resultByCategory.push(item);
           }
         });
       });
 
+      console.log("rsbc: ", resultByCategory);
       let result = resultByName.concat(resultByCategory);
       filterByStatus(result);
 
