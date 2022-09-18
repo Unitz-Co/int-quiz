@@ -1,0 +1,134 @@
+
+
+.card{
+    margin: 2rem 0;
+    color: var(--lightgreen);
+    background-color: var(--black);
+    border-top-left-radius: 30px;
+}
+.card-avatar{
+    position: relative;
+}
+.card-avatar img{
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-right: 3rem;
+    object-fit: cover;
+}
+.card-status{
+    position: absolute;
+    top: 180px;
+    right: 3rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    border: 2px solid var(--light);
+}
+.online{
+    background-color: var(--green);
+}
+.offline{
+    background-color: var(--gray);
+}
+.card h3{
+    font-size: 32px;
+}
+.card h5{
+    font-weight: 500;
+    font-size: 24px;
+    margin:  1rem 0;
+}
+.card-contact{
+    display: flex;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.card-info{
+    display: flex;
+}
+.card-info-i{
+    padding: 1rem 2rem;
+    color: var(--black);
+}
+.gray{
+    background-color: var(--lightgray);
+    flex: 1;
+}
+.green{
+    background-color: var(--lightgreen);
+    flex: 1;
+}
+.yellow{
+    background-color: var(--lightyellow);
+    flex: 1;
+}
+
+
+@media screen and (max-width:768px) {
+    .card img{
+        margin-right: 1.5rem;
+    }
+    .card-status{
+        top: 180px;
+        right: 1.5rem;
+    }
+    .card-contact{
+        display: block;
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width:556px) {
+    .card{
+        margin: 1rem 0;
+        flex: 1;
+        background-color: var(--light);
+        color: var(--black);
+    }
+    .card h3{
+        font-size: 22px;
+        flex: 1;
+        padding-right: 1rem;
+    }
+    .card h5{
+        font-weight: 500;
+        font-size: 24px;
+        margin:  1rem 0;
+    }
+    .card img{
+        width: 150px;
+        height: 150px;
+        margin-right: 1rem;
+    }
+    .card-status{
+        top: 132px;
+        right: 1rem;
+    }
+    .card-contact p{
+        font-size: 14px;
+        margin: 0;
+        flex: 1;
+    }
+    .card-info{
+        display: block;
+    }
+    .card-info-i{
+        margin-top: 5px;
+        color: white;
+    }
+    .gray{
+        border-radius: 0;
+        background-color: var(--gray);
+    }
+    .green{
+        background-color: var(--green);
+    }
+    .yellow{
+        background-color: var(--yellow);
+    }
+}
