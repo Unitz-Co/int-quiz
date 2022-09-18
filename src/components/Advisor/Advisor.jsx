@@ -7,8 +7,6 @@ const Advisor = (item) => {
   const categories = [
     ...new Set(it.categoriesCollection.items.map((c) => c.displayName)),
   ];
-  console.log(it.displayName);
-  console.log(categories);
   return (
     <div className="card">
       <div className="flex">
