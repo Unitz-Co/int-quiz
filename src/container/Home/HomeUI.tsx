@@ -5,6 +5,7 @@ import AdvisorContainer, {
 import CategorySelection, {
   CategorySelectionProps,
 } from "component/CategorySelection";
+import Loading from "component/Loading";
 import SearchBar, { SearchBarProps } from "component/SearchBar";
 import React from "react";
 import { memo } from "react";
@@ -13,12 +14,14 @@ type HomeUIProps = {
   searchBar: SearchBarProps;
   categorySelection: CategorySelectionProps;
   advisorContainer: AdvisorContainerProps;
+  loading: boolean;
 };
 
 const HomeUI = ({
   advisorContainer,
   categorySelection,
   searchBar,
+  loading,
 }: HomeUIProps) => {
   return (
     <Grid
@@ -34,11 +37,16 @@ const HomeUI = ({
         </Grid>
       </Grid>
 
-      <Grid container>
-        <CategorySelection {...categorySelection} />
-      </Grid>
-
-      <AdvisorContainer {...advisorContainer} />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Grid container>
+            <CategorySelection {...categorySelection} />
+          </Grid>
+          <AdvisorContainer {...advisorContainer} />
+        </>
+      )}
     </Grid>
   );
 };

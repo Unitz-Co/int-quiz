@@ -9,6 +9,7 @@ const Home = () => {
     handleSearchData,
     categories,
     handleSelectCategories,
+    loading,
   } = useHome();
   return (
     <HomeUI
@@ -19,6 +20,7 @@ const Home = () => {
         categories,
         onChange: handleSelectCategories,
       }}
+      loading={loading}
     />
   );
 };
