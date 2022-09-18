@@ -1,0 +1,11 @@
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #efefef;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
