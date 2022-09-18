@@ -4,7 +4,11 @@ import df from "../../assets/df.png";
 
 const Advisor = (item) => {
   const it = item.item;
-  //   console.log(item);
+  const categories = [
+    ...new Set(it.categoriesCollection.items.map((c) => c.displayName)),
+  ];
+  console.log(it.displayName);
+  console.log(categories);
   return (
     <div className="card">
       <div className="flex">
@@ -17,8 +21,8 @@ const Advisor = (item) => {
         <div>
           <h3>{it.displayName}</h3>
           <div className="card-contact">
-            <p className="mr-2">{it.email}</p>
-            <p>{it.phone}</p>
+            {it.email != null ? <p className="mr-2">✉ {it.email}</p> : <></>}
+            {it.phone != null ? <p>✆ {it.phone}</p> : <></>}
           </div>
         </div>
       </div>
@@ -26,10 +30,10 @@ const Advisor = (item) => {
       <div className="card-info">
         <div className="card-info-i gray">
           <h5>Categories</h5>
-          {it.categoriesCollection.items.map((c, i) => {
+          {categories.map((c, i) => {
             return (
               <p key={i} className="s">
-                {c.displayName}
+                {c}
               </p>
             );
           })}

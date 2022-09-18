@@ -2,28 +2,18 @@ import "./App.css";
 import Advisor from "./components/Advisor/Advisor";
 import myData from "./data.json";
 import icon_search from "./assets/search.png";
+import icon_filter from "./assets/filter.png";
 import { useState } from "react";
 
 function App() {
   const collections = myData.data.advisorProfileCollection.items;
-  // console.log(collections);
   const [advisors, setAdvisors] = useState(collections);
   const [search, setSearch] = useState("");
+  const [menu, setMenu] = useState(false);
 
   const onSeach = () => {
     if (search.length > 0) {
       const searchedObjects = [];
-
-      if (search == "online" || search == "offline") {
-        const status = search == "online" ? true : false;
-        collections.forEach((item, index) => {
-          if (item.online == status) {
-            if (!searchedObjects.includes(item)) searchedObjects.push(item);
-          }
-        });
-        setAdvisors(searchedObjects);
-        return;
-      }
 
       collections.forEach((item, index) => {
         if (
@@ -48,8 +38,27 @@ function App() {
       setAdvisors(searchedObjects);
     }
   };
+
+  const onFilter = (status) => {
+    if (status == null) {
+      setAdvisors(collections);
+      return;
+    }
+    const searchedObjects = [];
+    collections.forEach((item, index) => {
+      if (item.online == status) {
+        if (!searchedObjects.includes(item)) searchedObjects.push(item);
+      }
+    });
+    setAdvisors(searchedObjects);
+  };
   return (
-    <div className="App">
+    <div
+      className="App"
+      onClick={() => {
+        if (menu == true) setMenu(false);
+      }}
+    >
       <div className="flex-end">
         <div className="search">
           <input
@@ -61,6 +70,18 @@ function App() {
             }}
           />
           <img src={icon_search} alt="search" onClick={() => onSeach()} />
+        </div>
+        <div className="filter">
+          <img src={icon_filter} onClick={() => setMenu(!menu)} />
+          {menu === true ? (
+            <div className="filter-status">
+              <p onClick={() => onFilter(null)}>All</p>
+              <p onClick={() => onFilter(true)}>Online</p>
+              <p onClick={() => onFilter(false)}>Offline</p>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
 

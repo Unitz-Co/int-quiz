@@ -10,6 +10,7 @@
 .flex-end{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .mr-2{
@@ -31,7 +32,7 @@
   display: flex;
   border: none;
   margin-left: 1rem;
-  width: 15rem;
+  width: 13rem;
 }
 .search input:focus{
   outline-width: 0;
@@ -40,6 +41,29 @@
   cursor: pointer;
   height: 25px;
   margin-right: 1rem;
+}
+
+.filter{
+  position: relative;
+}
+.filter img{
+  width: 35px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.filter-status{
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  background-color: var(--light);
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  padding: 1rem;
+}
+.filter-status p{
+  cursor: pointer;
+  margin: 0.5rem ;
+  font-weight: 500;
 }
 
 
