@@ -1,0 +1,83 @@
+@import url('./vars.css');
+
+.App{
+  margin: 2rem 2rem;
+}
+
+.flex{
+  display: flex;
+}
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mr-2{
+  margin-right: 2rem;
+}
+.mr-4{
+  margin-right: 4rem;
+}
+
+.search{
+  display: flex;
+  border: 1px solid;
+  border-radius: 60px;
+  justify-content: center;
+  height: 2.5rem;
+  align-items: center;
+}
+.search input{
+  display: flex;
+  border: none;
+  margin-left: 1rem;
+  width: 13rem;
+}
+.search input:focus{
+  outline-width: 0;
+}
+.search img{
+  cursor: pointer;
+  height: 25px;
+  margin-right: 1rem;
+}
+
+.filter{
+  position: relative;
+}
+.filter img{
+  width: 35px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.filter-status{
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  background-color: var(--light);
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  padding: 1rem;
+}
+.filter-status p{
+  cursor: pointer;
+  margin: 0.5rem ;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width:768px) {
+  .App{
+    margin: 2rem 0.5rem;
+  }
+}
+
+@media screen and (max-width:556px) {
+  .search{
+    flex: 1;
+  }
+  .search input{
+    flex: 1;
+  }
+}

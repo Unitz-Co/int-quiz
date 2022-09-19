@@ -1,35 +1,19 @@
-Thank you very much for your interest in Unitz. 
+# Getting Started with Create React App
 
-As a next step in our interview process, we would like you to complete the following test and submit the results as a Pull Request to this repository. You need to fork this repository and push your code to your own repository in order to make a Pull Request to this repository.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the repo, there must be instructions on how to run the project locally, and if possible some screenshots of the product attached. 
+## Available Scripts
 
-Here’s the requirements. 
+In the project directory, you can run:
 
-- You can choose to implement these requirements in one of the following platform: React, React Native
+### `npm start`
 
-1. You are given a json file with the data about the advisors and their categories
-2. Display this list of advisors in a vertical and horizontal view
-3. Add a Search button to allow filtering the list by name and category
-4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- In case you’re applying for a Node.js backend developer position, please use the following requirement:
-
-1. You are given a json file with the data about the advisors
-2. Flatten these data about the advisors and store these data to mongodb
-3. Write a sample application (command line, or anything) in node.js to query this data, allowing filtering by name and category. 
-4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status
-
-We are looking forward to receiving your application. As soon as you submit the application, we will reply to you within one working day about the next step. 
-
-Thank you for your time and hope to collaborate with you in the future. 
-
-If you have any questions during the time working on this test, please feel free to reach out to us at: hi@unitz.app 
-
-Bests,
-
-Hoang Pham
-
-Co-founder Unitz.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
 
+<img width="376" alt="Screen Shot 2022-09-18 at 11 12 55 PM" src="https://user-images.githubusercontent.com/94053583/190937601-580ffc5d-0f00-4253-8596-b1b6791a3a90.png">
+<img width="667" alt="Screen Shot 2022-09-18 at 11 13 59 PM" src="https://user-images.githubusercontent.com/94053583/190937605-040863b8-72d9-40c8-9412-100f1b466d99.png">
