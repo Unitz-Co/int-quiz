@@ -65,10 +65,10 @@ export default function Main() {
     return (
         <div className="main">
             <div className="main_head">
-                <input className="main_search" type="search" placeholder="Search name/ cats/ status!"
+                <input className="main_search" type="search" placeholder="Search names/ categories/ status!"
                     onChange={handleSearch}
                 />
-                <img className='icon' src='./grid.svg' onClick={toggleDisplay}/>
+                <img className='icon' src='./grid.svg' alt='icon' onClick={toggleDisplay}/>
             </div>
             
             <div className={display}>

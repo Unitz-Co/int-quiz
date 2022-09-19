@@ -35,21 +35,23 @@ body {
 
 /* wrapper ------------------------------ */
 .wrapper {
-    margin: 4% 8%;
+    margin: 4% 16%;
     padding: 32px;
     background: white;
     border-radius: 32px;
+    transition: all 0.3s;
 }
 
 /* SMALL DEVICES ------------------------------ */
 @media (max-width: 1296px) {
     .wrapper {
-        margin: 4% 0;
+        margin: 4% 8%;
     }
 }
 
 @media (max-width: 672px) {
     .wrapper {
+        margin: 4% 0;
         position: relative;
         grid-template-columns: auto;
     }

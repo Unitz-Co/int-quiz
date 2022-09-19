@@ -8,7 +8,7 @@ export default function Advisors(props) {
 
     return (
         <div className="advisors_item">
-            <img className="advisors_img" src={props.img != null ? props.img : "./avatar.jpg"} alt=""/>
+            <img className="advisors_img" src={props.img != null ? props.img : "./avatar.jpg"} alt="avatar"/>
             <h2 className="advisors_name">{props.name}</h2> 
             <span className={`advisors_status ${props.status === 'online' ? 'online' : 'offline'}`}>
                 {props.status === 'online' ? 'online' : 'offline'}
