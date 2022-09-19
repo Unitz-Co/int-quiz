@@ -1,0 +1,100 @@
+/* advisors_item ------------------------------ */
+.advisors_item {
+    display: grid;
+    grid-template-areas: 
+        'img name name name status'
+        'img basic basic plus plus'
+        'img cat cat cat cat';
+    grid-template-columns: 160px 1fr 1fr 1.5fr 1fr;
+    gap: 16px;
+    background: var(--grey100);
+    padding: 16px;
+    border-radius: 16px;
+}
+.advisors_img {
+    grid-area: img;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.advisors_name {
+    grid-area: name;
+}
+.advisors_status {
+    grid-area: status;
+    align-self: center;
+    justify-self: end;
+    padding: 4px 8px;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.advisors_status.online {
+    background: #70BF88;
+}
+.advisors_status.offline {
+    background: #F8C9C3;
+}
+.advisors_info > div {
+    padding: 4px 0;
+}
+.advisors_info .bold {
+    font-weight: 700;
+}
+.advisors_info.basic {grid-area: basic}
+.advisors_info.plus {grid-area: plus}
+.advisors_cat {
+    grid-area: cat;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.advisors_cat_item {
+    padding: 4px 8px;
+    background: var(--grey300);
+    border-radius: 4px;
+}
+
+/* horizontal ------------------------------ */
+.main_advisors.hori 
+.advisors_item {
+    grid-template-areas: 
+        'img img'
+        'name status'
+        'basic basic'
+        'plus plus'
+        'cat cat';
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 220px 60px min-content min-content min-content;
+    align-items: center;
+    gap: 0;
+}
+.main_advisors.hori 
+.advisors_name {
+    font-size: 1.1rem;
+}
+.main_advisors.hori 
+.advisors_img {
+    width: 100%;
+    height: 100%;
+}
+
+/* SMALL DEVICES ------------------------------ */
+@media (max-width: 1080px) {
+    .advisors_item {
+        grid-template-areas: 
+            'img name name name status'
+            'img basic basic basic basic'
+            'img plus plus plus plus'
+            'img cat cat cat cat';
+        grid-template-columns: 176px 1fr 1fr 1.5fr 1fr;
+        grid-template-rows: auto min-content min-content min-content min-content;
+        gap: 0;
+    }
+    .advisors_img {
+        height: 100%;
+    }
+}
+

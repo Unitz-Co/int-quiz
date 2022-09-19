@@ -8,6 +8,7 @@
             "publishedAt": "2021-03-22T06:59:16.867Z"
           },
           "displayName": "Pham Ngoc Hoang ip",
+          "status": "online",
           "email": "pnhoang@gmail.com",
           "phone": "+1234567123",
           "avatarUrl": {
@@ -89,6 +90,7 @@
             "publishedAt": "2021-03-22T06:23:18.942Z"
           },
           "displayName": "HungT GG",
+          "status": "offline",
           "email": "hungtran0203@gmail.com",
           "phone": "+1234234",
           "avatarUrl": {
@@ -129,6 +131,7 @@
             "publishedAt": "2021-03-22T06:21:39.236Z"
           },
           "displayName": "Hoang Pham iPhone11",
+          "status": "online",
           "email": "hoangpn@gmail.com",
           "phone": "+84335182503",
           "avatarUrl": {
@@ -217,6 +220,7 @@
             "publishedAt": "2021-03-22T04:04:23.739Z"
           },
           "displayName": "Si Truong",
+          "status": "offline",
           "email": "si.truongtan@gmail.com",
           "phone": "+12341234",
           "avatarUrl": {
@@ -239,6 +243,7 @@
             "publishedAt": "2021-03-22T04:01:02.688Z"
           },
           "displayName": "Hung Tran FB",
+          "status": "offline",
           "email": "thhung1983@yahoo.com",
           "phone": "+84903865430",
           "avatarUrl": {
@@ -308,6 +313,7 @@
             "publishedAt": "2021-03-18T01:56:32.145Z"
           },
           "displayName": "TUta Koxx",
+          "status": "online",
           "email": "hungtran0203_3@gmail.com",
           "phone": "+ 15555550003",
           "avatarUrl": null,
@@ -364,6 +370,7 @@
             "publishedAt": "2021-03-17T12:09:58.130Z"
           },
           "displayName": "Danny Doughx",
+          "status": "online",
           "email": null,
           "phone": null,
           "avatarUrl": null,
@@ -391,6 +398,7 @@
             "publishedAt": "2021-03-17T08:47:28.218Z"
           },
           "displayName": "pba ax43",
+          "status": "offline",
           "email": null,
           "phone": null,
           "avatarUrl": {
@@ -434,6 +442,7 @@
             "publishedAt": "2021-03-17T07:38:11.834Z"
           },
           "displayName": "Advisor x24",
+          "status": "online",
           "email": null,
           "phone": null,
           "avatarUrl": {
@@ -456,6 +465,7 @@
             "publishedAt": "2021-03-17T06:57:25.558Z"
           },
           "displayName": "anot Dr.Fiax",
+          "status": "offline",
           "email": null,
           "phone": null,
           "avatarUrl": {
@@ -478,6 +488,7 @@
             "publishedAt": "2021-03-17T06:39:39.452Z"
           },
           "displayName": "New added adv",
+          "status": "online",
           "email": null,
           "phone": null,
           "avatarUrl": {

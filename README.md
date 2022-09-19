@@ -1,35 +1,27 @@
-Thank you very much for your interest in Unitz. 
+Instructions: How to run this project locally
 
-As a next step in our interview process, we would like you to complete the following test and submit the results as a Pull Request to this repository. You need to fork this repository and push your code to your own repository in order to make a Pull Request to this repository.
+(Notes: This is an React project, make sure you have already installed Node Packet Manager)
 
-In the repo, there must be instructions on how to run the project locally, and if possible some screenshots of the product attached. 
+1. Clone the project: 
+in your terminal: git clone https://github.com/tahbert/duong-nguyen-unitz.git
+3. Install the dependencies to the local node_modules folder
+in your terminal: npm i
+2. Run the project: 
+in your terminal: npm start
 
-Here’s the requirements. 
+Some screenshots of the project: 
 
-- You can choose to implement these requirements in one of the following platform: React, React Native
+1, vertical display: 
+https://drive.google.com/file/d/1qyJeA1SSw5IFj9JeD0Elp-ORRXJjJzcl/view?usp=sharing
 
-1. You are given a json file with the data about the advisors and their categories
-2. Display this list of advisors in a vertical and horizontal view
-3. Add a Search button to allow filtering the list by name and category
-4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status 
+2, horizontal display: 
+https://drive.google.com/file/d/1kVh4bSQecMywwpeHXfU-T9k98M9Xanhy/view?usp=sharing
 
-- In case you’re applying for a Node.js backend developer position, please use the following requirement:
+3, search names: 
+https://drive.google.com/file/d/1bISh-1yAKQUgzovIpS2l-cmh2ZSrEDRB/view?usp=sharing
 
-1. You are given a json file with the data about the advisors
-2. Flatten these data about the advisors and store these data to mongodb
-3. Write a sample application (command line, or anything) in node.js to query this data, allowing filtering by name and category. 
-4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status
+4, search cats: 
+https://drive.google.com/file/d/1kyDYI7JJa08lFSULIzaux_jNdB8yFNTR/view?usp=sharing
 
-We are looking forward to receiving your application. As soon as you submit the application, we will reply to you within one working day about the next step. 
-
-Thank you for your time and hope to collaborate with you in the future. 
-
-If you have any questions during the time working on this test, please feel free to reach out to us at: hi@unitz.app 
-
-Bests,
-
-Hoang Pham
-
-Co-founder Unitz.
-
-
+5, search status: 
+https://drive.google.com/file/d/1ko6nr4orTRYBb-hC1z4MPwIcJ2sp8nMW/view?usp=sharing
