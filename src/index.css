@@ -1,0 +1,56 @@
+/* google fonts ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* reseting ------------------------------ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: var(--grey900);
+}
+
+/* default ------------------------------ */
+:root {
+    --grey50: #fafafa;
+    --grey100: #f5f5f5;
+    --grey200: #eeeeee;
+    --grey300: #e0e0e0;
+    --grey400: #bdbdbd;
+    --grey500: #9e9e9e;
+    --grey600: #757575;
+    --grey700: #616161;
+    --grey800: #424242;
+    --grey900: #212121;
+}
+body {
+    background: #E4E4E1;
+}
+.update {
+    color: red;
+}
+
+/* wrapper ------------------------------ */
+.wrapper {
+    margin: 4% 8%;
+    padding: 32px;
+    background: white;
+    border-radius: 32px;
+}
+
+/* SMALL DEVICES ------------------------------ */
+@media (max-width: 1296px) {
+    .wrapper {
+        margin: 4% 0;
+    }
+}
+
+@media (max-width: 672px) {
+    .wrapper {
+        position: relative;
+        grid-template-columns: auto;
+    }
+}
