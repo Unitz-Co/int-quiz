@@ -10,6 +10,7 @@ in your terminal: npm i
 in your terminal: npm start
 
 Some screenshots of the project: 
+
 1, vertical display: 
 https://drive.google.com/file/d/1qyJeA1SSw5IFj9JeD0Elp-ORRXJjJzcl/view?usp=sharing
 
