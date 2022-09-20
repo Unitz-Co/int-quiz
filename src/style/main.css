@@ -1,0 +1,42 @@
+/* main ------------------------------ */
+.main {
+  display: inline;
+}
+.search-container {
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-items: center;
+  margin: auto;
+}
+.main_head {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.main_search:focus {
+  background: var(--grey300);
+}
+.main_render {
+  display: grid;
+  gap: 16px;
+}
+.main_render.hori {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* SMALL DEVICES ------------------------------ */
+@media (max-width: 1020px) {
+  .main_render.hori {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .main_render.hori {
+    grid-template-columns: 1fr;
+  }
+}
