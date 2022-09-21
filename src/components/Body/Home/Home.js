@@ -39,7 +39,7 @@ const Home = () => {
               )
                 return val;
               else {
-                let cate = val.skillsCollection.items.some((val) => {
+                let cate = val.categoriesCollection.items.some((val) => {
                   return val.displayName
                     .toLowerCase()
                     .includes(searchInput.toLowerCase());
