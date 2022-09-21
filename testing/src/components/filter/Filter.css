@@ -1,0 +1,33 @@
+.filter{
+    width: 30%;
+    box-shadow: 1px 1px 8px 4px grey;
+    height: 300px;
+}
+.filterName{
+    width: 250px;
+    height: 25px;
+    outline:none;
+    margin-bottom: 10px;
+}
+.status{
+    margin-bottom: 10px;
+}
+select{
+    outline:none;
+}
+.filter_contain{
+    padding: 0 40px;
+    text-align: left;
+}
+.filter-btn{
+    margin-top: 15px;
+}
+.btn-filter{
+    padding : 5px 20px;
+    outline:none;
+    border:none;
+    background-color: rgba(90, 90, 234, 0.651);
+    color:#fff;
+    cursor: pointer;
+
+}
