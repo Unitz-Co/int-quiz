@@ -14,7 +14,5 @@ export function filterList(data = [], params) {
     ));
   }
 
-  console.log(params.keys);
-  console.log(newData);
   return newData;
 };
