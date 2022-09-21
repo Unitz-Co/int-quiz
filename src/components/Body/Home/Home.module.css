@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 225, 225);
+}
+
+/*VIEW BUTTON*/
+.view-button {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.view-active {
+  opacity: 0.6;
+}
+
+/*ADVISOR LIST*/
+.advisors-list {
+  margin: 12px auto;
+  width: 90%;
+}
+
+/*ADVISOR LIST VIEW*/
+
+.advisors-list-hor {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-x: auto;
+  gap: 50px;
+}
+
+.advisors-list-ver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
