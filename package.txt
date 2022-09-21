@@ -1,1 +1,0 @@
- /* "start": "rimraf ./build && react-scripts start", */

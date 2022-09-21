@@ -1,21 +1,15 @@
-import React from "react";
-import { Switch, Route, Redirect } from 'react-router-dom';
-import Layout from "./container/Layout/Layout";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import { getCookie } from "./helpers/cookie.js";
-import { isTrue } from "./helpers/common.js";
+import * as React from 'react'
 
-const DashboardRouter = () => {
+// 1. import `ChakraProvider` component
+import { ChakraProvider } from '@chakra-ui/react'
+import Advisors from './layouts/Advisors';
+
+function App() {
   return (
-    <Switch>
-      <Route exact path="/dashboard" component={Dashboard} />
-      <Redirect path="*" to="/dashboard" />
-    </Switch>
+    <ChakraProvider>
+      <Advisors />
+    </ChakraProvider>
   );
 }
 
-export default () => (
-  <Layout>
-    <DashboardRouter />
-  </Layout>
-);
+export default App;
