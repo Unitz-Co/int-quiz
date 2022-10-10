@@ -1,48 +1,71 @@
-import { Avatar, Badge, Breadcrumb, Button, Image, Input, Layout, Space, Table, Typography } from 'antd';
-import { SearchOutlined, UserOutlined } from '@ant-design/icons';
-import { useContext, useRef, useState } from 'react';
-import Highlighter from 'react-highlight-words';
-import { AppContext } from '../app';
+import {
+  Avatar,
+  Badge,
+  Breadcrumb,
+  Button,
+  Image,
+  Input,
+  Layout,
+  Space,
+  Table,
+  Typography,
+} from 'antd'
+import { SearchOutlined, UserOutlined } from '@ant-design/icons'
+import { useContext, useRef, useState } from 'react'
+import Highlighter from 'react-highlight-words'
+import moment from 'moment'
+import { AppContext } from '../app'
 
-const { Header, Content } = Layout;
-const { Title } = Typography;
+const { Header, Content } = Layout
+const { Title } = Typography
 
 export default function Users() {
-  const { data } = useContext(AppContext);
-  const [selectedRowKeys, setSelectedRowKeys] = useState([]);
-  const [searchText, setSearchText] = useState('');
-  const [searchedColumn, setSearchedColumn] = useState('');
-  const searchInput = useRef();
+  const { data } = useContext(AppContext)
+  const [selectedRowKeys, setSelectedRowKeys] = useState([])
+  const [searchText, setSearchText] = useState('')
+  const [searchedColumn, setSearchedColumn] = useState('')
+  const searchInput = useRef()
 
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
-    confirm();
-    setSearchText(selectedKeys[0]);
-    setSearchedColumn(dataIndex);
-  };
+    confirm()
+    setSearchText(selectedKeys[0])
+    setSearchedColumn(dataIndex)
+  }
   const getColumnSearchProps = (dataIndex) => ({
-    filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
+    filterDropdown: ({
+      setSelectedKeys,
+      selectedKeys,
+      confirm,
+      clearFilters,
+    }) => (
       <div style={{ padding: 8 }}>
         <Input
           ref={searchInput}
           placeholder={`Search ${dataIndex}`}
           value={selectedKeys[0]}
           onChange={(e) => {
-            console.log(e.target.value);
-            setSelectedKeys(e.target.value ? [e.target.value] : []);
-            console.log(selectedKeys, confirm, dataIndex);
+            console.log(e.target.value)
+            setSelectedKeys(e.target.value ? [e.target.value] : [])
+            console.log(selectedKeys, confirm, dataIndex)
           }}
           onPressEnter={() => handleSearch(selectedKeys, confirm, dataIndex)}
           style={{ marginBottom: 8, display: 'block' }}
         />
         <Space>
-          <Button type="primary" onClick={() => handleSearch(selectedKeys, confirm, dataIndex)} icon={<SearchOutlined />} size="small" style={{ width: 90 }}>
+          <Button
+            type="primary"
+            onClick={() => handleSearch(selectedKeys, confirm, dataIndex)}
+            icon={<SearchOutlined />}
+            size="small"
+            style={{ width: 90 }}
+          >
             Search
           </Button>
           <Button
             onClick={() => {
               if (clearFilters) {
-                clearFilters();
-                setSearchText('');
+                clearFilters()
+                setSearchText('')
               }
             }}
             size="small"
@@ -54,9 +77,9 @@ export default function Users() {
             type="link"
             size="small"
             onClick={() => {
-              confirm({ closeDropdown: false });
-              setSearchText(selectedKeys[0]);
-              setSearchedColumn(dataIndex);
+              confirm({ closeDropdown: false })
+              setSearchText(selectedKeys[0])
+              setSearchedColumn(dataIndex)
             }}
           >
             Filter
@@ -64,19 +87,32 @@ export default function Users() {
         </Space>
       </div>
     ),
-    filterIcon: (filtered) => <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />,
-    onFilter: (value, record) => record[dataIndex].toString().toLowerCase().includes(value.toLowerCase()),
+    filterIcon: (filtered) => (
+      <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />
+    ),
+    onFilter: (value, record) =>
+      record[dataIndex].toString().toLowerCase().includes(value.toLowerCase()),
     onFilterDropdownOpenChange: (visible) => {
       if (visible) {
-        setTimeout(() => searchInput.current?.select(), 100);
+        setTimeout(() => searchInput.current?.select(), 100)
       }
     },
-    render: (text) => (searchedColumn === dataIndex ? <Highlighter highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }} searchWords={[searchText]} autoEscape textToHighlight={text ? text.toString() : ''} /> : text),
-  });
+    render: (text) =>
+      searchedColumn === dataIndex ? (
+        <Highlighter
+          highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
+          searchWords={[searchText]}
+          autoEscape
+          textToHighlight={text ? text.toString() : ''}
+        />
+      ) : (
+        text
+      ),
+  })
   const rowSelection = {
     selectedRowKeys,
     onChange: (newSelectedRowKeys) => {
-      setSelectedRowKeys(newSelectedRowKeys);
+      setSelectedRowKeys(newSelectedRowKeys)
     },
     selections: [
       Table.SELECTION_ALL,
@@ -86,39 +122,48 @@ export default function Users() {
         key: 'odd',
         text: 'Select Odd Row',
         onSelect: (changableRowKeys) => {
-          let newSelectedRowKeys = [];
+          let newSelectedRowKeys = []
           newSelectedRowKeys = changableRowKeys.filter((_, index) => {
             if (index % 2 !== 0) {
-              return false;
+              return false
             }
-            return true;
-          });
-          setSelectedRowKeys(newSelectedRowKeys);
+            return true
+          })
+          setSelectedRowKeys(newSelectedRowKeys)
         },
       },
       {
         key: 'even',
         text: 'Select Even Row',
         onSelect: (changableRowKeys) => {
-          let newSelectedRowKeys = [];
+          let newSelectedRowKeys = []
           newSelectedRowKeys = changableRowKeys.filter((_, index) => {
             if (index % 2 !== 0) {
-              return true;
+              return true
             }
-            return false;
-          });
-          setSelectedRowKeys(newSelectedRowKeys);
+            return false
+          })
+          setSelectedRowKeys(newSelectedRowKeys)
         },
       },
     ],
-  };
-  const sortDirections = ['descend', 'ascend'];
+  }
+  const sortDirections = ['descend', 'ascend']
   const columns = [
     {
       title: 'Avatar',
       dataIndex: 'avatar',
       render: (avatar) => {
-        return avatar ? <Image src={avatar} width={64} height={64} style={{ borderRadius: '50%', objectFit: 'cover' }} /> : <Avatar icon={<UserOutlined />} size={64} />;
+        return avatar ? (
+          <Image
+            src={avatar}
+            width={64}
+            height={64}
+            style={{ borderRadius: '50%', objectFit: 'cover' }}
+          />
+        ) : (
+          <Avatar icon={<UserOutlined />} size={64} />
+        )
       },
     },
     {
@@ -153,18 +198,30 @@ export default function Users() {
       title: 'Status',
       dataIndex: 'status',
       ...getColumnSearchProps('status'),
-      sorter: (a, b) => new Date(a.status).getTime() - new Date(b.status).getTime(),
-      render: (status) => <Badge status={status === 'offline' ? 'error' : 'success'} text={status === 'offline' ? 'Offline' : 'Online'} />,
+      sorter: (a, b) =>
+        new Date(a.status).getTime() - new Date(b.status).getTime(),
+      render: (status) => (
+        <Badge
+          status={status === 'offline' ? 'error' : 'success'}
+          text={status === 'offline' ? 'Offline' : 'Online'}
+        />
+      ),
       sortDirections,
     },
     {
       title: 'Published At',
       dataIndex: 'publishedAt',
       ...getColumnSearchProps('publishedAt'),
-      sorter: (a, b) => new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime(),
+      sorter: (a, b) =>
+        new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime(),
       sortDirections,
+      render: (publishedAt) => {
+        return (
+          <span>{moment(publishedAt).format('MMMM Do YYYY, h:mm:ss a')}</span>
+        )
+      },
     },
-  ];
+  ]
   return (
     <>
       <Breadcrumb style={{ margin: '16px 0' }}>
@@ -182,9 +239,13 @@ export default function Users() {
           <Title level={4}>Users</Title>
         </Header>
         <Content>
-          <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+          <Table
+            rowSelection={rowSelection}
+            columns={columns}
+            dataSource={data}
+          />
         </Content>
       </Layout>
     </>
-  );
+  )
 }
