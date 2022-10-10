@@ -1,0 +1,25 @@
+
+.advisor-list {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 80px ;
+}
+.advisor-item {
+  width: 380px;
+  margin: 30px;
+  min-height : 560px;
+}
+.advisor-item .MuiPaper-root {
+  width: 380px!important;
+  height: 100%!important;
+  & > .MuiBox-root-13 {
+    flex-shrink: 0;
+  }
+}
+.advisor-item .MuiCardMedia-img {
+  height : 280px!important;
+}
+.MuiCardContent-root {
+  flex: 1!important;
+}
