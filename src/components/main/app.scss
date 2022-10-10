@@ -1,0 +1,36 @@
+@import '../../styles/_variable';
+
+.app {
+  background-color: $backgroundColor;
+
+  &__searchBar {
+    position: relative;
+    width: 50%;
+    @media only screen and (max-width: 576px) {
+      width: 90%;
+    }
+
+    &--button {
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      position: absolute;
+      right: 10px;
+      top: 6px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $backgroundColor;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__list {
+    width: 75%;
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
