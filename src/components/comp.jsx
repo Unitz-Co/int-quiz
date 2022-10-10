@@ -195,7 +195,7 @@ export default function Comp({ name }) {
     <>
       <Breadcrumb style={{ margin: '16px 0' }}>
         <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
-        <Breadcrumb.Item>Users</Breadcrumb.Item>
+        <Breadcrumb.Item>{byName(name)}</Breadcrumb.Item>
       </Breadcrumb>
       <Layout>
         <Header
@@ -205,7 +205,7 @@ export default function Comp({ name }) {
             paddingInline: 15,
           }}
         >
-          <Title level={4}>Users</Title>
+          <Title level={4}>{byName(name)}</Title>
         </Header>
         <Content>
           <Table
