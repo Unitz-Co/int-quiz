@@ -191,8 +191,7 @@ export default function Advisors() {
       title: 'Status',
       dataIndex: 'status',
       ...getColumnSearchProps('status'),
-      sorter: (a, b) =>
-        new Date(a.status).getTime() - new Date(b.status).getTime(),
+      sorter: (a, b) => a.status.localeCompare(b.status),
       render: (status) => (
         <Badge
           status={status === 'offline' ? 'error' : 'success'}
