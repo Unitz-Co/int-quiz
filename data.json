@@ -66,22 +66,23 @@
                 "sys": {
                   "id": "LC3wZNJ0pMJUvzSy2HDan"
                 },
-                "name": "ChatService"
+                "displayName": "ChatService"
               },
               {
                 "sys": {
                   "id": "2LDhSuEGTTqz1pcLHxi4ks"
                 },
-                "name": "PhoneService"
+                "displayName": "PhoneService"
               },
               {
                 "sys": {
                   "id": "2BlxsDtKrXQfZ1bW4SXVmL"
                 },
-                "name": "VideoService"
+                "displayName": "VideoService"
               }
             ]
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -118,10 +119,11 @@
                 "sys": {
                   "id": "2BlxsDtKrXQfZ1bW4SXVmL"
                 },
-                "name": "VideoService"
+                "displayName": "VideoService"
               }
             ]
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -161,7 +163,7 @@
                 "sys": {
                   "id": "3FZbfOUlzD7LCWXAdyV1vu"
                 },
-                "displayName": "Hon nhan va gia dinh",
+                "displayName": "Hôn nhân gia đình",
                 "avatarUrl": null
               }
             ]
@@ -194,22 +196,23 @@
                 "sys": {
                   "id": "2BlxsDtKrXQfZ1bW4SXVmL"
                 },
-                "name": "VideoService"
+                "displayName": "VideoService"
               },
               {
                 "sys": {
                   "id": "2LDhSuEGTTqz1pcLHxi4ks"
                 },
-                "name": "PhoneService"
+                "displayName": "PhoneService"
               },
               {
                 "sys": {
                   "id": "LC3wZNJ0pMJUvzSy2HDan"
                 },
-                "name": "ChatService"
+                "displayName": "ChatService"
               }
             ]
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -231,7 +234,8 @@
           },
           "servicesCollection": {
             "items": []
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -285,22 +289,23 @@
                 "sys": {
                   "id": "LC3wZNJ0pMJUvzSy2HDan"
                 },
-                "name": "ChatService"
+                "displayName": "ChatService"
               },
               {
                 "sys": {
                   "id": "2BlxsDtKrXQfZ1bW4SXVmL"
                 },
-                "name": "VideoService"
+                "displayName": "VideoService"
               },
               {
                 "sys": {
                   "id": "2LDhSuEGTTqz1pcLHxi4ks"
                 },
-                "name": "PhoneService"
+                "displayName": "PhoneService"
               }
             ]
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -317,7 +322,7 @@
                 "sys": {
                   "id": "7pqQHEl1tNTr6VtMqcm9nB"
                 },
-                "displayName": "xem chỉ tay",
+                "displayName": "Xem chỉ tay",
                 "avatarUrl": {
                   "title": "catCoverChiTay",
                   "url": "https://images.ctfassets.net/49vqjgy9zjzd/6cm7lImuODzdiZ2jUDl8c9/fcf5281b533a37f40b0d65f5618958a7/catCoverChiTay.jpg"
@@ -347,16 +352,17 @@
                 "sys": {
                   "id": "LC3wZNJ0pMJUvzSy2HDan"
                 },
-                "name": "ChatService"
+                "displayName": "ChatService"
               },
               {
                 "sys": {
                   "id": "2BlxsDtKrXQfZ1bW4SXVmL"
                 },
-                "name": "VideoService"
+                "displayName": "VideoService"
               }
             ]
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -373,7 +379,7 @@
                 "sys": {
                   "id": "3FZbfOUlzD7LCWXAdyV1vu"
                 },
-                "displayName": "Hon nhan va gia dinh",
+                "displayName": "Hôn nhân gia đình",
                 "avatarUrl": null
               }
             ]
@@ -383,7 +389,8 @@
           },
           "servicesCollection": {
             "items": []
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -426,7 +433,8 @@
           },
           "servicesCollection": {
             "items": []
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -448,7 +456,8 @@
           },
           "servicesCollection": {
             "items": []
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -470,7 +479,8 @@
           },
           "servicesCollection": {
             "items": []
-          }
+          },
+          "status": "offline"
         },
         {
           "sys": {
@@ -492,7 +502,8 @@
           },
           "servicesCollection": {
             "items": []
-          }
+          },
+          "status": "offline"
         }
       ]
     }
