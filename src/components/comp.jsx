@@ -177,13 +177,6 @@ export default function Comp({ name }) {
       },
     },
     {
-      title: 'ID',
-      dataIndex: 'id',
-      ...getColumnSearchProps('id'),
-      sorter: (a, b) => a.id.localeCompare(b.id),
-      sortDirections,
-    },
-    {
       title: byName(name),
       dataIndex: 'displayName',
       ...getColumnSearchProps('displayName'),

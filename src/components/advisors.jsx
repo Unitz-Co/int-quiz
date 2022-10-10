@@ -19,7 +19,7 @@ import { AppContext } from '../app'
 const { Header, Content } = Layout
 const { Title } = Typography
 
-export default function Users() {
+export default function Advisors() {
   const { data } = useContext(AppContext)
   const [selectedRowKeys, setSelectedRowKeys] = useState([])
   const [searchText, setSearchText] = useState('')
@@ -167,13 +167,6 @@ export default function Users() {
       },
     },
     {
-      title: 'ID',
-      dataIndex: 'id',
-      ...getColumnSearchProps('id'),
-      sorter: (a, b) => a.id.localeCompare(b.id),
-      sortDirections,
-    },
-    {
       title: 'Name',
       dataIndex: 'displayName',
       ...getColumnSearchProps('displayName'),
@@ -226,7 +219,7 @@ export default function Users() {
     <>
       <Breadcrumb style={{ margin: '16px 0' }}>
         <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
-        <Breadcrumb.Item>Users</Breadcrumb.Item>
+        <Breadcrumb.Item>Advisors</Breadcrumb.Item>
       </Breadcrumb>
       <Layout>
         <Header
@@ -236,7 +229,7 @@ export default function Users() {
             paddingInline: 15,
           }}
         >
-          <Title level={4}>Users</Title>
+          <Title level={4}>Advisors</Title>
         </Header>
         <Content>
           <Table

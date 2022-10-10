@@ -3,7 +3,7 @@ import { DesktopOutlined, PieChartOutlined } from '@ant-design/icons'
 import { createContext, useEffect, useState } from 'react'
 import { API } from './utils'
 import axios from 'axios'
-import Users from './components/users'
+import Advisors from './components/advisors'
 import Comp from './components/comp'
 
 const { Footer, Sider, Content } = Layout
@@ -21,7 +21,7 @@ function checkKey(key, object) {
 }
 
 export default function App() {
-  const [data, setData] = useState(null)
+  const [data, setData] = useState()
   const [collapsed, setCollapsed] = useState(false)
   const [key, setKey] = useState('1')
 
@@ -56,7 +56,7 @@ export default function App() {
     }
   }
   const items = [
-    item('Users', '1', <PieChartOutlined />),
+    item('Advisors', '1', <PieChartOutlined />),
     item('Categories', '2', <DesktopOutlined />),
     item('Skills', '3', <DesktopOutlined />),
     item('Services', '4', <DesktopOutlined />),
@@ -94,7 +94,7 @@ export default function App() {
         </Sider>
         <Layout>
           <Content style={{ padding: 24, minHeight: '100vh' }}>
-            {key === '1' && <Users />}
+            {key === '1' && <Advisors />}
             {comps.map(
               (comp) =>
                 key === comp.key && <Comp key={comp.key} name={comp.name} />,
