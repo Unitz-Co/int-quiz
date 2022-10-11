@@ -1,0 +1,6 @@
+I used the tailwindcss and ant design libraries for this test
+
+You can choose horizontal or vertical button to switch table style.
+you can search for advisors by name by clicking on the search icon or you can also filter out the category or status of the teachers as desired.
+
+thank you and wish you all the best
