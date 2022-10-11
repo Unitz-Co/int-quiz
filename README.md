@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Thank you very much for your interest in Unitz. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As a next step in our interview process, we would like you to complete the following test and submit the results as a Pull Request to this repository. You need to fork this repository and push your code to your own repository in order to make a Pull Request to this repository.
 
-## Available Scripts
+In the repo, there must be instructions on how to run the project locally, and if possible some screenshots of the product attached. 
 
-In the project directory, you can run:
+Here’s the requirements. 
 
-### `npm start`
+- You can choose to implement these requirements in one of the following platform: React, React Native
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. You are given a json file with the data about the advisors and their categories
+2. Display this list of advisors in a vertical and horizontal view
+3. Add a Search button to allow filtering the list by name and category
+4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- In case you’re applying for a Node.js backend developer position, please use the following requirement:
 
-### `npm test`
+1. You are given a json file with the data about the advisors
+2. Flatten these data about the advisors and store these data to mongodb
+3. Write a sample application (command line, or anything) in node.js to query this data, allowing filtering by name and category. 
+4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We are looking forward to receiving your application. As soon as you submit the application, we will reply to you within one working day about the next step. 
 
-### `npm run build`
+Thank you for your time and hope to collaborate with you in the future. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you have any questions during the time working on this test, please feel free to reach out to us at: hi@unitz.app 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Bests,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Hoang Pham
 
-### `npm run eject`
+Co-founder Unitz.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
