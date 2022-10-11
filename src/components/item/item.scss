@@ -1,0 +1,31 @@
+@import '../../styles/_variable';
+
+.item {
+  &__img {
+    height: 300px;
+    object-fit: contain;
+
+    @media only screen and (max-width: 992px) {
+      height: 200px;
+    }
+  }
+
+  &__button {
+    border-radius: 8px;
+    width: auto;
+    border: none;
+    background-color: $backgroundColor;
+    padding: 5px;
+
+    &--img {
+      height: 30px;
+      border-radius: 50%;
+      object-fit: contain;
+      padding-right: 5px;
+    }
+
+    &--title {
+      white-space: nowrap;
+    }
+  }
+}
