@@ -1,8 +1,9 @@
 @import '../../styles/_variable';
 
-.app {
+body {
   background-color: $backgroundColor;
-
+}
+.app {
   &__searchBar {
     position: relative;
     width: 50%;
@@ -27,8 +28,75 @@
     }
   }
 
+  &__suggestions {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 10px 20px 20px;
+  }
+
+  &__suggestionsFlow {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+
+    @media only screen and (max-width: 768px) {
+      padding-left: 60px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &--items {
+      display: flex;
+      background-color: white;
+      padding: 5px 10px;
+      margin-right: 10px;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &--choose {
+      transition: all 0.3s;
+      background-color: $secondColor;
+      color: aliceblue;
+    }
+
+    &--img {
+      margin-right: 5px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+    &--title {
+      white-space: nowrap;
+      align-self: center;
+      justify-content: center;
+    }
+  }
+
   &__list {
     width: 75%;
+
+    &--notify {
+      display: flex;
+      height: 90vh;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+    }
+
     @media only screen and (max-width: 992px) {
       width: 100%;
     }
