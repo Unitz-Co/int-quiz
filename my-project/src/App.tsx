@@ -16,6 +16,9 @@ function App() {
   const [servicesCollection, setServicesCollection] = useState<any>([]);
   const [skillsCollection, setSkillsCollection] = useState<any>([]);
   const [categories, setSategories] = useState<any>("");
+  const [services, setServices] = useState<any>("");
+  const [skills, setSkills] = useState<any>("");
+  const [activess, setActive] = useState<any>("");
 
   useEffect(() => {
     setDataUser(data.data.advisorProfileCollection.items);
@@ -74,25 +77,78 @@ function App() {
         !skillsIDS.includes(displayName, index + 1)
     );
     setSkillsCollection(Skills);
-    // console.debug("duplicateCollection", duplicateCollection);
-    console.debug("categoriesIDS", Categories);
   }, []);
   console.debug("newDataUser", newDataUser);
 
-  // .map((item:any)=>item?.sys.id.includes(categories))
   const onSearch = (value: string) => {
-    const result = dataUser.filter((word: any) =>
-      word.displayName.toLowerCase().includes(value.toLowerCase())
-  
-    // word.categoriesCollection.items[0]?.sys.id.includes(categories)
+    console.debug("search :", value);
+    console.debug("categories :", categories);
+    console.debug("services :", services);
+    console.debug("skills :", skills);
+    console.debug("active :", activess);
 
-    );
-    
-    setNewDataUser(result);
+    const categoriess =
+      categories === ""
+        ? dataUser
+        : dataUser.filter((user: any) =>
+            user.categoriesCollection.items.find((Categories: any) =>
+              Categories.sys.id.includes(categories)
+            )
+          );
+
+    const servicess =
+      services === ""
+        ? categoriess
+        : categoriess.filter((user: any) =>
+            user.servicesCollection.items.find((Services: any) =>
+              Services.sys.id
+                .toLowerCase()
+                .includes(services === "" ? "" : services.toLowerCase())
+            )
+          );
+
+    const skillss =
+      skills === ""
+        ? servicess
+        : servicess.filter((user: any) =>
+            user.skillsCollection.items.find((Skills: any) =>
+              Skills.sys.id
+                .toLowerCase()
+                .includes(skills === "" ? "" : skills.toLowerCase())
+            )
+          );
+
+    const actives =
+      activess === ""
+        ? skillss
+        : skillss.filter(
+            (user: any) => user.active === (activess === "" ? "" : activess)
+          );
+
+    const searchh =
+      value === ""
+        ? actives
+        : actives.filter((user: any) =>
+            user.displayName
+              .toLowerCase()
+              .includes(value === "" ? "" : value.toLowerCase().trim())
+          );
+
+    setNewDataUser(searchh);
   };
 
   const onChangeCategories = (value: string) => {
     setSategories(value === undefined ? "" : value);
+    return setNewDataUser(dataUser);
+  };
+  const onChangeServices = (value: string) => {
+    setServices(value === undefined ? "" : value);
+  };
+  const onChangeSkills = (value: string) => {
+    setSkills(value === undefined ? "" : value);
+  };
+  const onChangeActive = (value: string) => {
+    setActive(value === undefined ? "" : value);
   };
   const columns = [
     {
@@ -180,10 +236,11 @@ function App() {
           style={{
             width: 300,
           }}
+          allowClear
           showSearch
           placeholder="Select a services collection"
           optionFilterProp="children"
-          onChange={onChangeCategories}
+          onChange={onChangeServices}
           filterOption={(input, option) =>
             (option!.children as unknown as string)
               .toLowerCase()
@@ -199,10 +256,11 @@ function App() {
           style={{
             width: 300,
           }}
+          allowClear
           showSearch
           placeholder="Select a skills collection"
           optionFilterProp="children"
-          onChange={onChangeCategories}
+          onChange={onChangeSkills}
           filterOption={(input, option) =>
             (option!.children as unknown as string)
               .toLowerCase()
@@ -213,6 +271,24 @@ function App() {
             skillsCollection.map((item: any) => (
               <Option value={item?.sys.id}>{item?.displayName}</Option>
             ))}
+        </Select>
+        <Select
+          style={{
+            width: 300,
+          }}
+          allowClear
+          showSearch
+          placeholder="Select active"
+          optionFilterProp="children"
+          onChange={onChangeActive}
+          filterOption={(input, option) =>
+            (option!.children as unknown as string)
+              .toLowerCase()
+              .includes(input.toLowerCase())
+          }
+        >
+          <Option value={1}>Trực tuyến</Option>
+          <Option value={0}>Ngoại tuyến</Option>
         </Select>
         <Search
           allowClear
