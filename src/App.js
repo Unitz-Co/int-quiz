@@ -39,6 +39,7 @@ function App() {
                     email={advisor.email}
                     phone={advisor.phone}
                     online={advisor.online}
+                    categories={advisor.categoriesCollection?.items}
                   />
                 </Grid>
               ))

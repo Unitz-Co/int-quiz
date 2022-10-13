@@ -102,7 +102,7 @@ export default function SearchAppBar() {
             }}>
               <FormControlLabel control={<Switch checked={onlineOnly} color="default" onChange={() => {
                 dispatch(switchOnlineOnly());
-              }} />} label="Show online advisors only" />
+              }} />} label="Online" />
             </FormGroup>
 
             <Search>

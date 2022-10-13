@@ -1,12 +1,14 @@
 // Material UI
-import Card from '@mui/material/Card';
 import Badge from '@mui/material/Badge';
-import CardMedia from '@mui/material/CardMedia';
+import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 export default function AdvisorItem(props) {
-  const { image, displayName, email, phone, online } = props;
+  const { image, displayName, email, phone, online, categories } = props;
 
   return (
     <Card>
@@ -24,9 +26,20 @@ export default function AdvisorItem(props) {
         </Badge>
 
         <Typography variant="body2" color="text.secondary">
-          Email: {email}<br />
-          Phone: {phone}
+          {email && <>
+            Email: {email}<br />
+          </>}
+
+          {phone && <>
+            Phone: {phone}<br />
+          </>}
         </Typography>
+
+        {categories && <Stack direction="row" spacing={1} sx={{ mt: 1, display: 'block', }}>
+          {categories.map((category, i) => (
+            <Chip key={i} label={category.displayName} color="primary" variant="outlined" sx={{ mt: '8px !important', ml: '0 !important', mr: '8px !important', }} />
+          ))}
+        </Stack>}
       </CardContent>
     </Card >
   );
