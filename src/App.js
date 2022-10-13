@@ -27,7 +27,7 @@ function App() {
       <Header />
       <Toolbar />
 
-      <Box component="main" sx={{ mt: 2, }}>
+      <Box component="main" sx={{ my: 2, }}>
         <Container>
           <Grid container spacing={2}>
             {
@@ -38,6 +38,7 @@ function App() {
                     displayName={advisor.displayName}
                     email={advisor.email}
                     phone={advisor.phone}
+                    online={advisor.online}
                   />
                 </Grid>
               ))

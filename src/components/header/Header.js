@@ -1,23 +1,30 @@
 // Packages
 import * as React from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 // Material UI
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormGroup from '@mui/material/FormGroup';
 import InputBase from '@mui/material/InputBase';
+import Switch from '@mui/material/Switch';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
 // Icons Material
 import SearchIcon from '@mui/icons-material/Search';
 
 // Store
 import {
+  selectOnlineOnly,
   selectSearchKeyword,
   setSearchKeyword,
+  switchOnlineOnly,
+  updateList,
 } from 'app/advisorSlice';
 
 const Search = styled('div')(({ theme }) => ({
@@ -65,7 +72,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   const dispatch = useDispatch();
 
+  const onlineOnly = useSelector(selectOnlineOnly);
   const searchKeyword = useSelector(selectSearchKeyword);
+
+  useEffect(() => {
+    dispatch(updateList());
+  }, [dispatch, onlineOnly, searchKeyword])
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -84,6 +96,15 @@ export default function SearchAppBar() {
             >
               ADVISOR LIST
             </Typography>
+
+            <FormGroup sx={{
+              display: 'flex',
+            }}>
+              <FormControlLabel control={<Switch checked={onlineOnly} color="default" onChange={() => {
+                dispatch(switchOnlineOnly());
+              }} />} label="Show online advisors only" />
+            </FormGroup>
+
             <Search>
               <SearchIconWrapper>
                 <SearchIcon />
