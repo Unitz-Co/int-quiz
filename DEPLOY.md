@@ -3,7 +3,7 @@
 ## Client
 
 ```sh
-cd /usr/share/nginx/code/unitz.nguyenanhvu.com/client
+cd /usr/share/nginx/code/unitz.nguyenanhvu.com
 yarn
 yarn build:production
 ```
@@ -21,5 +21,5 @@ sudo certbot --nginx
 ## Client
 
 ```sh
-cd /usr/share/nginx/code/unitz.nguyenanhvu.com/client && yarn deploy
+cd /usr/share/nginx/code/unitz.nguyenanhvu.com && yarn deploy
 ```
