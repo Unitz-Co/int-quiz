@@ -36,12 +36,23 @@ function App({getState,getStateStatus, getStateName, getStateCate}) {
               item.displayName.toLowerCase().trim() === cate.toLowerCase().trim())
       })
   }
-  const searchFC = () => {
+  const searchFC =  () => {
     let listFilter = [];
-    listFilter = filterStatus(getStateStatus, listUser);
-    listFilter = filterName(getStateName, listFilter)
-    listFilter = filterCate(getStateCate, listFilter)
-    setList(listFilter);
+    const myPromise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        listFilter = filterStatus(getStateStatus, listUser);
+        listFilter = filterName(getStateName, listFilter)
+        listFilter = filterCate(getStateCate, listFilter)
+        if(listFilter.length > 0) resolve();
+        else reject();
+      }, 0)
+      
+    })
+    myPromise.then(res => setList(listFilter)).catch(() => setList(listFilter));
+    // listFilter = filterStatus(getStateStatus, listUser);
+    // listFilter = filterName(getStateName, listFilter)
+    // listFilter = filterCate(getStateCate, listFilter)
+    // setList(listFilter);
   }
 
   useEffect(() => {

@@ -42,18 +42,15 @@ export function getListCategory() {
         for(let j = ii + 1; j < n ;j ++) {
                 if(newValue[ii]?.toLowerCase()?.trim() == newValue[j]?.toLowerCase()?.trim()){
                   
-                    newValue.splice(j, 1);
-                    
+                    newValue.splice(j, 1);                
                 }
-            
         }
-        ii ++;
-       
+        ii ++;   
     }
     newValue.unshift('all')
     newValue.push('more...')
     return newValue;
 } 
 
-//  console.log(getListCategory())
+
 

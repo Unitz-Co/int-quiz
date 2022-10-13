@@ -7,6 +7,9 @@ import Skills from "./skills/Skills";
 import Status from "./status/Status";
 import style from './user.module.scss'
 
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 // vertical and horizontal
 
 function User({getView,avatar, baseInfo, listCate, skills, listService, status}) {
