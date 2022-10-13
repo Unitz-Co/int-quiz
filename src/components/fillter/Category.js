@@ -8,6 +8,9 @@ const getListCategory = ['all',
 'Xem phong thủy', 
 'Tư vấn hôn nhân gia đình',
 'Xem tướng học',
+'Hon nhan va gia dinh',
+'xem chỉ tay',
+'Xem tướng học',
 ]
 
 function Category ({setCategory}) {

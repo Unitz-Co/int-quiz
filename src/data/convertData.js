@@ -35,5 +35,5 @@ export function getListCategory() {
     return newValue;
 } 
 
-//  console.log(getListCategory())
+ console.log(getListCategory())
 
