@@ -49,10 +49,7 @@ function App({getState,getStateStatus, getStateName, getStateCate}) {
       
     })
     myPromise.then(res => setList(listFilter)).catch(() => setList(listFilter));
-    // listFilter = filterStatus(getStateStatus, listUser);
-    // listFilter = filterName(getStateName, listFilter)
-    // listFilter = filterCate(getStateCate, listFilter)
-    // setList(listFilter);
+    
   }
 
   useEffect(() => {
