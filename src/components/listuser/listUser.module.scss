@@ -5,6 +5,14 @@
     margin-bottom: 50px;
     position: relative;
 }
+.skeleton {
+    position: relative;
+    width: 100%;
+     height: 100px;
+     margin-bottom: 10px;
+    // border: solid;
+   
+} 
 .vertical {
     grid-template-columns: repeat(3,minmax(0,1fr));
 }

@@ -40,6 +40,7 @@ function App({getState,getStateStatus, getStateName, getStateCate}) {
   }
   const searchFC =  () => {
     let listFilter = [];
+    setList([])
     const myPromise = new Promise((resolve, reject) => {
       setTimeout(() => {
         listFilter = filterStatus(getStateStatus, listUser);
@@ -47,7 +48,7 @@ function App({getState,getStateStatus, getStateName, getStateCate}) {
         listFilter = filterCate(getStateCate, listFilter)
         if(listFilter.length > 0) resolve();
         else reject();
-      }, 0)
+      }, 500)
       
     })
     myPromise.then(res => setList(listFilter)).catch(() => setList(listFilter));

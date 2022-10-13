@@ -1,12 +1,15 @@
 import { connect } from "react-redux";
 import User from "../user/User";
 import style from './listUser.module.scss'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 // vertical and horizontal
  function ListUser ({getView,listUser = []}) {
   
     const handleView = () => {
         return getView === 'horizontal'? style.horizontal: style.vertical
    }
+   if(listUser.length > 0)
     return (<div className={style.listUser + ' ' + handleView()}>
         {listUser.length > 0 ? listUser.map((user, index) => {
             const baseInfo = {
@@ -42,6 +45,15 @@ import style from './listUser.module.scss'
         <h1>No data to view. Please query exacly the key work and do it again</h1>
         }
     </div>)
+    else {
+        
+        console.log('listuser componen')
+        return (<div className={style.listUser }>
+            <Skeleton className={style.skeleton} count={5}></Skeleton>
+        </div>)
+        
+    }
+    
 }
 
 const mapState = (state) => {
