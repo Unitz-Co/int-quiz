@@ -5,7 +5,7 @@
 ```sh
 cd /usr/share/nginx/code/unitz.nguyenanhvu.com
 yarn
-yarn build:production
+yarn build
 ```
 
 ## Nginx
