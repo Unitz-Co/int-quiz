@@ -32,8 +32,28 @@ export function getListCategory() {
             newValue.push(tem)
         })
     })
+    let ii = 0;
+   
+    let nn = newValue.length;
+    // console.log(newValue)
+    while(ii < nn) {
+        
+        const n = newValue.length;
+        for(let j = ii + 1; j < n ;j ++) {
+                if(newValue[ii]?.toLowerCase()?.trim() == newValue[j]?.toLowerCase()?.trim()){
+                  
+                    newValue.splice(j, 1);
+                    
+                }
+            
+        }
+        ii ++;
+       
+    }
+    newValue.unshift('all')
+    newValue.push('more...')
     return newValue;
 } 
 
- console.log(getListCategory())
+//  console.log(getListCategory())
 

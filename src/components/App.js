@@ -26,6 +26,11 @@ function App({getState,getStateStatus, getStateName, getStateCate}) {
 
   const filterCate = (cate, listUser = []) => {
       if(cate === 'all') return listUser 
+      if(cate === 'more...') 
+          return listUser.filter(user => {
+            return !user.categoriesCollection.items.find(item => 
+                item.displayName.toLowerCase().trim() !== cate.toLowerCase().trim())
+          })
       return listUser.filter(user => {
           return user.categoriesCollection.items.find(item => 
               item.displayName.toLowerCase().trim() === cate.toLowerCase().trim())

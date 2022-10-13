@@ -1,17 +1,9 @@
 import { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import { getListCategory } from "../../data/convertData";
 import { setCategory } from "../../store/actions";
 import style from './fillter.module.scss'
 
-const getListCategory = ['all',
-'Tư vấn tâm lý', 
-'Xem phong thủy', 
-'Tư vấn hôn nhân gia đình',
-'Xem tướng học',
-'Hon nhan va gia dinh',
-'xem chỉ tay',
-'Xem tướng học',
-]
 
 function Category ({setCategory}) {
   
@@ -28,7 +20,7 @@ function Category ({setCategory}) {
     return (<div className={style.category}>
         <label>Filter by Category</label>
         <select onChange={handleSelection}>
-            {getListCategory.map((value, index) => {
+            {getListCategory().map((value, index) => {
                 return (<option key={index} value={value}>{value}</option>)
             })}
         </select>
