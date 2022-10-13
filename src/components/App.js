@@ -6,7 +6,9 @@ import {listUser} from '../data/convertData';
 import Fillter from './fillter/Fillter';
 import { connect } from 'react-redux';
 import Display from './display/Display';
+import { removeAccents } from '../common/js';
 
+// removeAccents
 
 function App({getState,getStateStatus, getStateName, getStateCate}) {
   // console.log('App.js',getState)
@@ -19,7 +21,7 @@ function App({getState,getStateStatus, getStateName, getStateCate}) {
 
   const filterName = (name, listUser = []) => {
     return  listUser.filter(user => {
-        return user.displayName.toLowerCase().search(name.trim()) >= 0
+        return user.displayName.toLowerCase().search(removeAccents(name.trim())) >= 0
     
     }); 
   }

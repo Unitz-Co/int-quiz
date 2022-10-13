@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { connect } from "react-redux";
 import { setName } from "../../store/actions";
 import style from './fillter.module.scss'
-
+// removeAccents
 function Name({setNameAction}) {
     const [inputName, setInputName] = useState('');
     const handleInputName = (e) => {
