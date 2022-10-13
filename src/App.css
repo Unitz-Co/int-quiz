@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.socialIcons {
+  font-size: 30px;
+}
+.socialIcons a {
+  color: #f14545;
+}
+.personDetail {
+  width: 100%;
+  justify-content: center;
+}
+.personDetail h1 {
+  font-size: 40px;
+}
+.personDetail h2 {
+  font-size: 20px;
+}
+.ngheNghiep {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.vertical {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.vertical .contact {
+  margin-top: 10px;
+  color: black;
+}
+.vertical .contact a {
+  padding: 0 70px;
+}
+.servicesAndSkill .services {
+  border-right: 3px solid rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+}
+.servicesAndSkill .skills {
+  padding: 0 20px;
+}
+.servicesAndSkill .services,
+.servicesAndSkill .skills {
+  display: flex;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .control {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .displayControl {
+    margin-left: 0 !important;
+  }
+  .displayText {
+    margin-left: 0 !important;
+    margin-right: 18px;
+  }
+  .inputControl {
+    width: 200 !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .vertical .contact a {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .cardVertical {
+    flex-direction: column;
+  }
+  .personDetail {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  .cardVertical {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 840px) {
+  .cardPerson {
+    flex-direction: column;
+  }
+  .cardPerson_image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardPerson_image img {
+    width: 150px;
+    height: 120px;
+  }
+  .cardContent {
+    min-height: 100px !important;
+  }
+  .vertical .personImage {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .demo {
+    font-size: 100;
+  }
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 542px) {
+  .control {
+    padding: 0;
+  }
+  .searchControl,
+  .displayControl {
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .displayControl div {
+    margin-left: 0 !important;
+  }
+  .searchControl span {
+    margin-left: 0 !important;
+  }
+  .personDetail .ngheNghiep {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .personDetail h1 {
+    margin-bottom: 20px !important;
+  }
+}
+@media screen and (max-width: 530px) {
+  .servicesAndSkill {
+    flex-direction: column;
+  }
+  .servicesAndSkill .services {
+    border: none;
+  }
+  .servicesAndSkill .skills ul {
+    margin-left: 70px !important;
+  }
+  .personDetail h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .vertical .contact a {
+    padding: 0 10px;
+  }
+}
