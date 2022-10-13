@@ -1,0 +1,12 @@
+.tableAdvisorContainer {
+  /* margin: 40px; */
+  background-color: white;
+  padding: 20px;
+}
+
+.homeContainer {
+  background-color: rgb(245, 245, 245);
+  min-height: calc(100vh - 50px);
+  /* width: calc(100vw - 34px); */
+  padding: 20px;
+}
