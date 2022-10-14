@@ -1,35 +1,24 @@
-Thank you very much for your interest in Unitz. 
+Dear Unitz, 
+My name is Nguyen Van Tro, and I am from the University of Education. 
 
-As a next step in our interview process, we would like you to complete the following test and submit the results as a Pull Request to this repository. You need to fork this repository and push your code to your own repository in order to make a Pull Request to this repository.
+First, Thank you for allowing me to prove my ability myself in this contest.
 
-In the repo, there must be instructions on how to run the project locally, and if possible some screenshots of the product attached. 
+Second, I would like to guide you in installing, setup, and using my application step by step.
++ Step 1: Ensure you install NodeJS in your locality.
++ Step 2: Clone this repository with the link: https://github.com/tronguyen-kimlong/Nguyen-Van-Tro---Unitz-Test.git.
++ Step 3: In your terminal, you install this project by npm install
++ Step 4: Into the step before, continue the command npm start to run the project.
 
-Here’s the requirements. 
+Next, these are some screenshots of my project that I list below.
++ View horizontal: ![image](https://user-images.githubusercontent.com/107535196/195518810-3b066c6c-b32e-41ff-a175-5871521caac4.png)
++ View vertical: ![image](https://user-images.githubusercontent.com/107535196/195518886-b2dcfee3-acde-4d32-bf42-74252722f1fe.png)
++ Filter by name: ![image](https://user-images.githubusercontent.com/107535196/195519152-71e7dc20-3c3e-42e5-88ef-56c85277e628.png)
++ Filter by category: ![image](https://user-images.githubusercontent.com/107535196/195519297-1a8f5290-b81c-46af-ab1e-fe431d064afb.png)
++ Filter by status: ![image](https://user-images.githubusercontent.com/107535196/195519420-0fe2593b-318e-41db-9baa-f126bd30842f.png)
++ Filter by all property: ![image](https://user-images.githubusercontent.com/107535196/195519668-7fdc43c1-4c23-4d8a-b055-d6d99206217a.png)
 
-- You can choose to implement these requirements in one of the following platform: React, React Native
+Finally, thank you again to review my repository. If my first test passed, I am excited to meet you in the next interview.
 
-1. You are given a json file with the data about the advisors and their categories
-2. Display this list of advisors in a vertical and horizontal view
-3. Add a Search button to allow filtering the list by name and category
-4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status 
+Thank you and best regards
 
-- In case you’re applying for a Node.js backend developer position, please use the following requirement:
-
-1. You are given a json file with the data about the advisors
-2. Flatten these data about the advisors and store these data to mongodb
-3. Write a sample application (command line, or anything) in node.js to query this data, allowing filtering by name and category. 
-4. Optionally you can edit the json file to list advisor’s online/offline status and use the above filter function to allow filtering advisors by online/offline status
-
-We are looking forward to receiving your application. As soon as you submit the application, we will reply to you within one working day about the next step. 
-
-Thank you for your time and hope to collaborate with you in the future. 
-
-If you have any questions during the time working on this test, please feel free to reach out to us at: hi@unitz.app 
-
-Bests,
-
-Hoang Pham
-
-Co-founder Unitz.
-
-
+Nguyen Van Tro

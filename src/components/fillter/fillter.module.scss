@@ -1,0 +1,73 @@
+.fillter {
+    border: solid 1px red;
+    // padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.fillter .box {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+.fillter .box > button {
+    // position: absolute;
+    // right: 10px;
+    // bottom: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 30, 60);
+    color: white;
+}
+.fillter >button:hover {
+    animation: show 0.5s ease-out;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+.name >label {
+    width: 30%;
+   
+}
+.name > input {
+    width: 70%;
+}
+.category {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+.category > select {
+    
+    display: inherit;
+    width: 70%;
+    padding: 5x;
+}
+.category >label {
+   
+    width: 30%;
+}
+
+.status {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+.status > label {
+    width: 30%;
+}
+
+@keyframes show {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: rgb(0,30,60);
+    }
+}

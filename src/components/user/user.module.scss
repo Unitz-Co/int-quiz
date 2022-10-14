@@ -1,0 +1,19 @@
+.user{
+    border: dashed 0.5px rgb(0,115,231);
+    position: relative;
+    // display: flex;
+    display: grid;
+    padding: 5px 0px 5px 20px;
+    justify-content: center;
+    grid-auto-rows: minmax(min-content,max-content);
+   
+}
+.vertical {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+}
+.horizontal {
+    grid-template-columns: repeat(5,minmax(0,1fr));
+}
+
+
+// vertical and horizontal

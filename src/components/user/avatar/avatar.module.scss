@@ -1,0 +1,19 @@
+.avatar {
+    width: 150px;
+    height: 150px;
+    
+    position: relative;
+}
+.avatar > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.avatar > p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8px;
+}
