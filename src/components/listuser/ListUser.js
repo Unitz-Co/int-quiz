@@ -47,7 +47,6 @@ import 'react-loading-skeleton/dist/skeleton.css'
     </div>)
     else {
         
-        console.log('listuser componen')
         return (<div className={style.listUser }>
             <Skeleton className={style.skeleton} count={5}></Skeleton>
         </div>)
