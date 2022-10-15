@@ -9,7 +9,7 @@ const AdvisorCard = (advisor) => {
     const advisorItem = { ...advisor.advisor }
 
     return (
-        <div className="xs:w-full md:w-[48%] xl:w-[32%] h-auto rounded-lg p-2.5 shadow-md border-[1px] border-[#1dbce04a]">
+        <div className="xs:w-full md:w-[48%] xl:w-[32%] h-auto rounded-lg p-2.5 shadow-md border-[2px] border-[#1dbce04a]">
             <HeaderAdvisorCard
                 advisorItem={advisorItem}
             />

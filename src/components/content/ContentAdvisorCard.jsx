@@ -11,7 +11,7 @@ const ContentAdvisorCard = ({ advisorItem, isShowBodyCard }) => {
     return (
         <>
             {isShowBodyCard === true &&
-                <div className="w-full my-2.5">
+                <div className="w-full h-[254px] my-2.5">
                     <p className="font-bold text-lg my-1.5">
                         Email:
                         <span className="font-normal ml-3">
